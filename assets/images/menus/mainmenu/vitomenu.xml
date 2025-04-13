@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="vitomenu.png">
+	<!-- Created with Adobe Animate version 18.0.2.126 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="vito menu0000" x="0" y="0" width="510" height="696" frameX="-60" frameY="-48" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0001" x="0" y="0" width="510" height="696" frameX="-60" frameY="-48" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0002" x="510" y="0" width="513" height="707" frameX="-63" frameY="-37" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0003" x="510" y="0" width="513" height="707" frameX="-63" frameY="-37" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0004" x="1023" y="0" width="512" height="716" frameX="-57" frameY="-28" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0005" x="1023" y="0" width="512" height="716" frameX="-57" frameY="-28" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0006" x="1535" y="0" width="512" height="721" frameX="-51" frameY="-23" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0007" x="2047" y="0" width="528" height="732" frameX="-35" frameY="-12" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0008" x="2575" y="0" width="528" height="732" frameX="-35" frameY="-12" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0009" x="3103" y="0" width="523" height="732" frameX="-35" frameY="-12" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0010" x="0" y="732" width="528" height="735" frameX="-29" frameY="-9" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0011" x="0" y="732" width="528" height="735" frameX="-29" frameY="-9" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0012" x="528" y="732" width="528" height="735" frameX="-29" frameY="-9" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0013" x="1056" y="732" width="531" height="736" frameX="-26" frameY="-8" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0014" x="1056" y="732" width="531" height="736" frameX="-26" frameY="-8" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0015" x="1587" y="732" width="540" height="737" frameX="-2" frameY="-7" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0016" x="1587" y="732" width="540" height="737" frameX="-2" frameY="-7" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0017" x="2127" y="732" width="545" height="741" frameX="0" frameY="-3" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0018" x="2127" y="732" width="545" height="741" frameX="0" frameY="-3" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0019" x="2672" y="732" width="543" height="744" frameX="-9" frameY="0" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0020" x="2672" y="732" width="543" height="744" frameX="-9" frameY="0" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0021" x="3215" y="732" width="543" height="740" frameX="-19" frameY="-4" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0022" x="0" y="1476" width="539" height="734" frameX="-23" frameY="-10" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0023" x="539" y="1476" width="539" height="734" frameX="-23" frameY="-10" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0024" x="1078" y="1476" width="543" height="734" frameX="-23" frameY="-10" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0025" x="1621" y="1476" width="539" height="731" frameX="-27" frameY="-13" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0026" x="1621" y="1476" width="539" height="731" frameX="-27" frameY="-13" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0027" x="2160" y="1476" width="542" height="731" frameX="-27" frameY="-13" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0028" x="2702" y="1476" width="541" height="731" frameX="-28" frameY="-13" frameWidth="576" frameHeight="744"/>
+	<SubTexture name="vito menu0029" x="2702" y="1476" width="541" height="731" frameX="-28" frameY="-13" frameWidth="576" frameHeight="744"/>
+</TextureAtlas>
