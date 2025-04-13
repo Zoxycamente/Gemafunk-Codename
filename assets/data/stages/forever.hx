@@ -4,8 +4,6 @@ var everchange:Bool = false;
 var zoomTween:FlxTween;
 var colorShader = new CustomShader("adjustColor");
 
-var VALUE;
-
 function create() {
 	defaultCamZoom = 0.7;
 }
@@ -15,6 +13,8 @@ function postCreate() {
 	colorShader.brightness = 10;
 
     camGame.addShader(colorShader);
+    camHUD.addShader(colorShader);
+
 	bg1 = new FlxSprite(-600, -130).loadGraphic(Paths.image(path + "4everback"));
     bg1.antialiasing = true;
 	insert(0, bg1);
@@ -26,6 +26,29 @@ function postCreate() {
 	radio = new FlxSprite(-900, -700).loadGraphic(Paths.image(path + "radio"));
 	radio.scale.set(0.4,0.4);
     radio.antialiasing = true;
+
+    dad.onDraw = (spr:Character) -> {
+        spr.setColorTransform(0, 0, 0, 0.35);
+        spr.offset.set(-spr.globalOffset.x - 20, -spr.globalOffset.y + 10);
+        spr.draw();
+
+        spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
+        spr.alpha = 1;
+        spr.color = FlxColor.WHITE;
+        spr.draw();
+    };
+
+    boyfriend.onDraw = (spr:Character) -> {
+        spr.setColorTransform(0, 0, 0, 0.35);
+        spr.offset.set(-spr.globalOffset.x + 20, -spr.globalOffset.y + 10);
+        spr.draw();
+
+        spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
+        spr.alpha = 1;
+        spr.color = FlxColor.WHITE;
+
+        spr.draw();
+    };
 
 }
 

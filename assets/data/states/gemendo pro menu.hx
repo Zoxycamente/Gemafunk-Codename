@@ -17,10 +17,8 @@ import flixel.input.keyboard.FlxKey;
 import funkin.backend.utils.WindowUtils;
 
 var optionShit:Array<String> = ["storymode", "tracks", "credits"];
-var sndOptions:Array<String> = ["options", "gallery"];
 
 var menuItems:FlxTypedGroup<FlxSprite>;
-var minimenuitens:FlxTypedGroup<FlxSprite>;
 var curSelected:Int = 0;
 var selectedSomethin:Bool = false;
 public var canAccessDebugMenus:Bool = true;
@@ -59,10 +57,11 @@ function create() {
     
     menuItems = new FlxTypedGroup();
     add(menuItems);
-    for (i in 0...optionShit.length) {
+    for (i in 0...3) {
         var menuItem = new FlxSprite(30, -100 + (i * 150));
         menuItem.frames = Paths.getFrames('menus/mainmenu/menushit');
-        menuItem.animation.addByPrefix("idle", optionShit[i], 24, false);
+        menuItem.animation.addByPrefix("idle", optionShit[i] + " idle", 24, false);
+        menuItem.animation.addByPrefix("selected", optionShit[i] + " selected", 24, false);
         menuItem.animation.play("idle");
         menuItem.ID = i;
         menuItem.scale.set(0.35,0.35);
@@ -73,20 +72,14 @@ function create() {
     }
 
     changeItem();
-
-    minimenuitens = new FlxTypedGroup();
-    add(minimenuitens);
-    for (i in 0...sndOptions.length) {
-        var scndMenu = new FlxSprite(-480  + (i * 201) ,-20);
-        scndMenu.frames = Paths.getFrames('menus/mainmenu/othershit');
-        scndMenu.animation.addByPrefix("idle", sndOptions[i], 24, false);
-        scndMenu.animation.play("idle");
-        scndMenu.ID = i;
-        scndMenu.scale.set(0.15, 0.15);
-
-        minimenuitens.add(scndMenu);
-    }
-
+//-480, -20
+    options = new FlxSprite(-480, -20);
+    options.frames = Paths.getSparrowAtlas('menus/mainmenu/othershit');
+    options.animation.addByPrefix('idle', 'options idle', 24, false);
+    options.animation.addByPrefix('selected', 'options selected', 24, false);
+    options.animation.play('idle'); 
+    options.scale.set(0.15, 0.15);
+    add(options);
 }
 
 
@@ -123,6 +116,12 @@ function update(elapsed:Float) {
 			}
 		}
     }
+    
+    if (FlxG.mouse.overlaps(options)) {
+        options.animation.play('selected'); 
+
+        if (FlxG.mouse.justPressed) FlxG.switchState(new OptionsMenu());
+    }
 }
 
 function selectItem() {
@@ -150,15 +149,8 @@ public function changeItem(huh:Int = 0) {
 
     curSelected = event.value;
 
-    menuItems.forEach(function(spr:FlxSprite) { spr.color = FlxColor.WHITE;
-        
-        if (spr.ID == curSelected) { 
-            if (menuItems.members[0]) spr.color = FlxColor.RED; 
-            if (menuItems.members[1]) spr.color = FlxColor.GREEN;
-        }
-    
-        spr.updateHitbox();
-        spr.centerOffsets();
-        });
-
+    menuItems.forEach(function(spr:FlxSprite) { 
+        spr.animation.play('idle');
+        if (spr.ID == curSelected) { spr.animation.play('selected'); }
+    });
 }

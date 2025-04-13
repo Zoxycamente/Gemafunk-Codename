@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character y="100" sprite="GemaGem Shadow" scale="1.1" icon="gememeunomefalandoDUDU" color="#AF66CE" holdTime="6.1">
+	<anim name="danceLeft" anim="Gema Idle" x="0" y="0" fps="24" loop="false" indices="0..12"/>
+	<anim name="danceRight" anim="Gema Idle" x="0" y="0" fps="24" loop="false" indices="13..27"/>
+	<anim name="singUP" anim="Gema Up" x="0" y="60" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Gema Left" x="43" y="-2" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Gema Right" x="87" y="6" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Gema Down" x="72" y="-38" fps="24" loop="false"/>
+</character>

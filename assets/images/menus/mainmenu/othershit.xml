@@ -2,7 +2,9 @@
 <!--
 Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
 -->
-<TextureAtlas imagePath="othershit.png" width="918" height="1705">
-	<SubTexture name="gallery" x="1" y="921" width="906" height="783" frameX="-180" frameY="-281" frameWidth="1280" frameHeight="1280"/>
-	<SubTexture name="options" x="1" y="1" width="916" height="917" frameX="-186" frameY="-223" frameWidth="1280" frameHeight="1280"/>
+<TextureAtlas imagePath="othershit.png" width="918" height="3413">
+	<SubTexture name="gallery idle" x="1" y="2629" width="906" height="783" frameX="-180" frameY="-281" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="gallery selected" x="1" y="1841" width="906" height="785" frameX="-180" frameY="-279" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="options idle" x="1" y="921" width="916" height="917" frameX="-186" frameY="-223" frameWidth="1280" frameHeight="1280"/>
+	<SubTexture name="options selected" x="1" y="1" width="916" height="917" frameX="-186" frameY="-223" frameWidth="1280" frameHeight="1280"/>
 </TextureAtlas>
