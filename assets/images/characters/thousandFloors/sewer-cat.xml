@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sewer-cat.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Idle0000" x="2135" y="0" width="821" height="692" frameX="-278" frameY="-450" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Idle0001" x="749" y="1900" width="735" height="735" frameX="-321" frameY="-407" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Idle0002" x="2135" y="692" width="692" height="821" frameX="-364" frameY="-321" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Idle0003" x="2135" y="692" width="692" height="821" frameX="-364" frameY="-321" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Idle0004" x="2135" y="692" width="692" height="821" frameX="-364" frameY="-321" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Up0000" x="0" y="907" width="610" height="993" frameX="-418" frameY="-149" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Up0001" x="0" y="0" width="692" height="907" frameX="-364" frameY="-235" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Down0000" x="2956" y="0" width="821" height="649" frameX="-321" frameY="-493" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Down0001" x="1484" y="1900" width="778" height="692" frameX="-321" frameY="-450" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Right0000" x="692" y="0" width="751" height="778" frameX="-536" frameY="-364" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Right0001" x="692" y="778" width="692" height="821" frameX="-536" frameY="-321" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Left0000" x="0" y="1900" width="749" height="756" frameX="-264" frameY="-386" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Left0001" x="1443" y="0" width="692" height="821" frameX="-321" frameY="-321" frameWidth="1378" frameHeight="1378"/>
+</TextureAtlas>

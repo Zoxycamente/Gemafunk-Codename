@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="notes.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="strum down static0000" x="0" y="0" width="158" height="179"/>
+	<SubTexture name="strum left static0000" x="158" y="0" width="179" height="156"/>
+	<SubTexture name="strum right static0000" x="337" y="0" width="179" height="156"/>
+	<SubTexture name="strum up static0000" x="516" y="0" width="158" height="179"/>
+	<SubTexture name="note down0000" x="674" y="0" width="158" height="179"/>
+	<SubTexture name="note down hold end0000" x="832" y="0" width="29" height="66"/>
+	<SubTexture name="note down hold0000" x="861" y="0" width="29" height="44"/>
+	<SubTexture name="strum down confirm0000" x="890" y="0" width="230" height="256" frameX="0" frameY="0" frameWidth="231" frameHeight="257"/>
+	<SubTexture name="strum down confirm0001" x="1120" y="0" width="230" height="256" frameX="0" frameY="0" frameWidth="231" frameHeight="257"/>
+	<SubTexture name="strum down confirm0002" x="1350" y="0" width="230" height="253" frameX="-1" frameY="-4" frameWidth="231" frameHeight="257"/>
+	<SubTexture name="strum down confirm0003" x="1350" y="0" width="230" height="253" frameX="-1" frameY="-4" frameWidth="231" frameHeight="257"/>
+	<SubTexture name="strum down confirm0004" x="1580" y="0" width="157" height="178" frameX="-36" frameY="-42" frameWidth="231" frameHeight="257"/>
+	<SubTexture name="strum down confirm0005" x="1580" y="0" width="157" height="178" frameX="-36" frameY="-42" frameWidth="231" frameHeight="257"/>
+	<SubTexture name="strum down press0000" x="1737" y="0" width="150" height="166" frameX="-3" frameY="-4" frameWidth="155" frameHeight="173"/>
+	<SubTexture name="strum down press0001" x="1737" y="0" width="150" height="166" frameX="-3" frameY="-4" frameWidth="155" frameHeight="173"/>
+	<SubTexture name="strum down press0002" x="1887" y="0" width="155" height="173"/>
+	<SubTexture name="strum down press0003" x="1887" y="0" width="155" height="173"/>
+	<SubTexture name="note up0000" x="0" y="256" width="158" height="179"/>
+	<SubTexture name="note up hold end0000" x="158" y="256" width="29" height="66"/>
+	<SubTexture name="note up hold0000" x="187" y="256" width="29" height="44"/>
+	<SubTexture name="strum left confirm0000" x="216" y="256" width="255" height="231"/>
+	<SubTexture name="strum left confirm0001" x="471" y="256" width="245" height="221" frameX="-4" frameY="-5" frameWidth="255" frameHeight="231"/>
+	<SubTexture name="strum left confirm0002" x="716" y="256" width="251" height="228" frameX="-1" frameY="-1" frameWidth="255" frameHeight="231"/>
+	<SubTexture name="strum left confirm0003" x="716" y="256" width="251" height="228" frameX="-1" frameY="-1" frameWidth="255" frameHeight="231"/>
+	<SubTexture name="strum left confirm0004" x="967" y="256" width="178" height="157" frameX="-38" frameY="-33" frameWidth="255" frameHeight="231"/>
+	<SubTexture name="strum left confirm0005" x="967" y="256" width="178" height="157" frameX="-38" frameY="-33" frameWidth="255" frameHeight="231"/>
+	<SubTexture name="strum left press0000" x="1145" y="256" width="167" height="149" frameX="-3" frameY="-3" frameWidth="173" frameHeight="155"/>
+	<SubTexture name="strum left press0001" x="1145" y="256" width="167" height="149" frameX="-3" frameY="-3" frameWidth="173" frameHeight="155"/>
+	<SubTexture name="strum left press0002" x="1312" y="256" width="173" height="155"/>
+	<SubTexture name="strum left press0003" x="1312" y="256" width="173" height="155"/>
+	<SubTexture name="note left hold end0000" x="1485" y="256" width="29" height="66"/>
+	<SubTexture name="note left0000" x="1514" y="256" width="179" height="156"/>
+	<SubTexture name="note left hold0000" x="1693" y="256" width="29" height="44"/>
+	<SubTexture name="note right0000" x="1722" y="256" width="179" height="156"/>
+	<SubTexture name="note right hold end0000" x="1901" y="256" width="29" height="66"/>
+	<SubTexture name="note right hold0000" x="1930" y="256" width="29" height="44"/>
+	<SubTexture name="strum right confirm0000" x="0" y="487" width="252" height="226" frameX="0" frameY="-3" frameWidth="253" frameHeight="231"/>
+	<SubTexture name="strum right confirm0001" x="252" y="487" width="252" height="226" frameX="0" frameY="-3" frameWidth="253" frameHeight="231"/>
+	<SubTexture name="strum right confirm0002" x="504" y="487" width="253" height="231"/>
+	<SubTexture name="strum right confirm0003" x="504" y="487" width="253" height="231"/>
+	<SubTexture name="strum right confirm0004" x="757" y="487" width="178" height="157" frameX="-36" frameY="-32" frameWidth="253" frameHeight="231"/>
+	<SubTexture name="strum right confirm0005" x="757" y="487" width="178" height="157" frameX="-36" frameY="-32" frameWidth="253" frameHeight="231"/>
+	<SubTexture name="strum right press0000" x="935" y="487" width="167" height="149" frameX="-3" frameY="-3" frameWidth="173" frameHeight="155"/>
+	<SubTexture name="strum right press0001" x="935" y="487" width="167" height="149" frameX="-3" frameY="-3" frameWidth="173" frameHeight="155"/>
+	<SubTexture name="strum right press0002" x="1102" y="487" width="173" height="155"/>
+	<SubTexture name="strum right press0003" x="1102" y="487" width="173" height="155"/>
+	<SubTexture name="strum up confirm0000" x="1275" y="487" width="236" height="261"/>
+	<SubTexture name="strum up confirm0001" x="1511" y="487" width="236" height="261"/>
+	<SubTexture name="strum up confirm0002" x="1747" y="487" width="214" height="237" frameX="-11" frameY="-12" frameWidth="236" frameHeight="261"/>
+	<SubTexture name="strum up confirm0003" x="1747" y="487" width="214" height="237" frameX="-11" frameY="-12" frameWidth="236" frameHeight="261"/>
+	<SubTexture name="strum up confirm0004" x="0" y="748" width="158" height="179" frameX="-37" frameY="-39" frameWidth="236" frameHeight="261"/>
+	<SubTexture name="strum up confirm0005" x="0" y="748" width="158" height="179" frameX="-37" frameY="-39" frameWidth="236" frameHeight="261"/>
+	<SubTexture name="strum up press0000" x="158" y="748" width="150" height="166" frameX="-3" frameY="-4" frameWidth="155" frameHeight="173"/>
+	<SubTexture name="strum up press0001" x="158" y="748" width="150" height="166" frameX="-3" frameY="-4" frameWidth="155" frameHeight="173"/>
+	<SubTexture name="strum up press0002" x="308" y="748" width="155" height="173"/>
+	<SubTexture name="strum up press0003" x="308" y="748" width="155" height="173"/>
+</TextureAtlas>
