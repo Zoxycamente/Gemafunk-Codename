@@ -24,17 +24,17 @@ function postCreate() {
 
 function stepHit(curStep) {
     switch(curStep) {
-        case 413: zoomTween = FlxTween.tween(camGame, {zoom: 1}, 3, {ease: FlxEase.backinOut});
-        case 427:
+        case 413, 1267: zoomTween = FlxTween.tween(camGame, {zoom: 1}, 3, {ease: FlxEase.backinOut});
+        case 427, 1280:
             zoomTween.cancel();
             for (i in [camGame, camHUD]) {
                 zoomTween2 = FlxTween.tween(i, {zoom: 1.2}, 22, {ease: FlxEase.backinOut});
             }
-            for (i in [bg, fg]) i.shader = colorShader;
+            for (i in [bg, fg, gf]) i.shader = colorShader;
             for (elements in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, missesTxt, accuracyTxt]) elements.visible = false;
-        case 640:
+        case 640, 1494:
             zoomTween2.cancel();
-            for (i in [bg, fg]) i.shader = null;
+            for (i in [bg, fg, gf]) i.shader = null;
             for (elements in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, missesTxt, accuracyTxt]) elements.visible = true;
 
     }

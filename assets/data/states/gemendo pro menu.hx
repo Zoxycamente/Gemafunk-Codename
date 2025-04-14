@@ -16,7 +16,7 @@ import flixel.text.FlxTextBorderStyle;
 import flixel.input.keyboard.FlxKey;
 import funkin.backend.utils.WindowUtils;
 
-var optionShit:Array<String> = ["storymode", "tracks", "credits"];
+var optionShit:Array<String> = ["storymode", "tracks", "credits", "options", "gallery"];
 
 var menuItems:FlxTypedGroup<FlxSprite>;
 var curSelected:Int = 0;
@@ -48,7 +48,6 @@ function create() {
     vito.animation.addByPrefix('idle', 'vito menu', 24, true);
     vito.animation.play('idle'); 
     vito.scrollFactor.set(2, 2);
-
     add(vito);
 
     preto = new FlxSprite(-450,-400).loadGraphic(Paths.image('menus/mainmenu/preto'));
@@ -58,28 +57,30 @@ function create() {
     
     menuItems = new FlxTypedGroup();
     add(menuItems);
-    for (i in 0...3) {
-        var menuItem = new FlxSprite(30, -100 + (i * 150));
+    for (i in 0...optionShit.length) {
+        var menuItem = new FlxSprite(20, 30 + (i * 170));
         menuItem.frames = Paths.getFrames('menus/mainmenu/menushit');
         menuItem.animation.addByPrefix("idle", optionShit[i] + " idle", 24, false);
         menuItem.animation.addByPrefix("selected", optionShit[i] + " selected", 24, false);
         menuItem.animation.play("idle");
         menuItem.ID = i;
+
         menuItem.scale.set(0.35,0.35);
 
         menuItems.add(menuItem);
         menuItem.antialiasing = true;
         menuItem.updateHitbox();
     }
-    changeItem();
 
-    optionsFUCK = new FlxSprite(-480, -20);
-    optionsFUCK.frames = Paths.getSparrowAtlas('menus/mainmenu/othershit');
-    optionsFUCK.animation.addByPrefix('idle', 'options idle', 24, false);
-    optionsFUCK.animation.addByPrefix('selected', 'options selected', 24, false);
-    optionsFUCK.animation.play('idle'); 
-    optionsFUCK.scale.set(0.15, 0.15);
-    add(optionsFUCK);
+    menuItems.members[3].scale.set(0.17,0.17);
+    menuItems.members[3].x = -50;
+    menuItems.members[3].y = 478;
+    menuItems.members[4].scale.set(0.17,0.17);
+    menuItems.members[4].x = 140;
+    menuItems.members[4].y = 500;
+
+    changeItem();
+//-480 -20
 }
 
 
@@ -130,9 +131,18 @@ function selectItem() {
         var event = event("onSelectItem", EventManager.get(NameEvent).recycle(daChoice));
         if (event.cancelled) return;
         switch (daChoice)   {
-           case 'storymode': FlxG.switchState(new StoryMenuState());
+           case 'storymode': 
+            openSubState(new ModSubState("substate irado"));
+            selectedSomethin = persistentUpdate = false;
+            persistentDraw = true;
+
            case 'tracks': FlxG.switchState(new FreeplayState());
            case 'credits': FlxG.switchState(new CreditsMain());
+           case 'options': FlxG.switchState(new OptionsMenu());
+           case 'gallery': 
+            openSubState(new ModSubState("substate irado"));
+            selectedSomethin = persistentUpdate = false;
+            persistentDraw = true;
     }});
 }
 
