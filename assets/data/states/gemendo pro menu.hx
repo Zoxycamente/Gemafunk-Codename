@@ -21,6 +21,7 @@ var optionShit:Array<String> = ["storymode", "tracks", "credits"];
 var menuItems:FlxTypedGroup<FlxSprite>;
 var curSelected:Int = 0;
 var selectedSomethin:Bool = false;
+var canSelectOptions:Bool = false;
 public var canAccessDebugMenus:Bool = true;
 
 FlxG.mouseControls = true;
@@ -35,7 +36,7 @@ function create() {
     bg.scale.set(0.5,0.5);
     add(bg);
 
-    gradiente = new FlxSprite(-360,-400).loadGraphic(Paths.image('menus/mainmenu/gradiente'));
+    gradiente = new FlxSprite(-320,-400).loadGraphic(Paths.image('menus/mainmenu/gradiente'));
     gradiente.antialiasing = true;
     gradiente.scale.set(0.5,0.5);
     gradiente.blend = BlendMode.OVERLAY;
@@ -70,16 +71,15 @@ function create() {
         menuItem.antialiasing = true;
         menuItem.updateHitbox();
     }
-
     changeItem();
-//-480, -20
-    options = new FlxSprite(-480, -20);
-    options.frames = Paths.getSparrowAtlas('menus/mainmenu/othershit');
-    options.animation.addByPrefix('idle', 'options idle', 24, false);
-    options.animation.addByPrefix('selected', 'options selected', 24, false);
-    options.animation.play('idle'); 
-    options.scale.set(0.15, 0.15);
-    add(options);
+
+    optionsFUCK = new FlxSprite(-480, -20);
+    optionsFUCK.frames = Paths.getSparrowAtlas('menus/mainmenu/othershit');
+    optionsFUCK.animation.addByPrefix('idle', 'options idle', 24, false);
+    optionsFUCK.animation.addByPrefix('selected', 'options selected', 24, false);
+    optionsFUCK.animation.play('idle'); 
+    optionsFUCK.scale.set(0.15, 0.15);
+    add(optionsFUCK);
 }
 
 
@@ -107,20 +107,13 @@ function update(elapsed:Float) {
     }
 
 	if (!selectedSomethin) {
-        changeItem((controls.UP_P ? -1 : 0) + (controls.DOWN_P ? 1 : 0) - FlxG.mouse.wheel);
-        if (FlxG.mouse.justPressed || controls.ACCEPT) selectItem();
+        if (FlxG.mouse.justPressed) selectItem();
 		for (i in menuItems.members) {
 			if (FlxG.mouse.overlaps(i)) {
 				curSelected = menuItems.members.indexOf(i);
 				changeItem();
 			}
 		}
-    }
-    
-    if (FlxG.mouse.overlaps(options)) {
-        options.animation.play('selected'); 
-
-        if (FlxG.mouse.justPressed) FlxG.switchState(new OptionsMenu());
     }
 }
 
