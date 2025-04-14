@@ -2,6 +2,8 @@ var path:String = "stages/4ever/";
 var everchange:Bool = false;
 
 var zoomTween:FlxTween;
+var hudTween:FlxTween;
+
 var colorShader = new CustomShader("adjustColor");
 
 function create() {
@@ -26,46 +28,57 @@ function postCreate() {
 	radio = new FlxSprite(-900, -700).loadGraphic(Paths.image(path + "radio"));
 	radio.scale.set(0.4,0.4);
     radio.antialiasing = true;
-
-    dad.onDraw = (spr:Character) -> {
-        spr.setColorTransform(0, 0, 0, 0.35);
-        spr.offset.set(-spr.globalOffset.x - 20, -spr.globalOffset.y + 10);
-        spr.draw();
-
-        spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
-        spr.alpha = 1;
-        spr.color = FlxColor.WHITE;
-        spr.draw();
-    };
-
-    boyfriend.onDraw = (spr:Character) -> {
-        spr.setColorTransform(0, 0, 0, 0.35);
-        spr.offset.set(-spr.globalOffset.x + 20, -spr.globalOffset.y + 10);
-        spr.draw();
-
-        spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
-        spr.alpha = 1;
-        spr.color = FlxColor.WHITE;
-
-        spr.draw();
-    };
-
 }
 
 function stepHit(curStep) {
     switch(curStep) {
         case 1193:
-            zoomTween = FlxTween.tween(camGame, {zoom: 1.2}, 6, {ease: FlxEase.backinOut});
+            for (i in [camHUD, camGame]) {
+                zoomTween = FlxTween.tween(i, {zoom: 1.2}, 6, {ease: FlxEase.backinOut});
+                hudTween = FlxTween.tween(camHUD, {alpha: 0}, 5.5, {ease: FlxEase.backinOut});
+                i.shake(0.002, 5, null, true);
+
+            }
         case 1249:
+            camHUD.alpha = 1;
+            zoomTween.cancel();
+            hudTween.cancel();
+            dad.onDraw = (spr:Character) -> {
+                spr.setColorTransform(0, 0, 0, 0.35);
+                spr.offset.set(-spr.globalOffset.x - 20, -spr.globalOffset.y + 10);
+                spr.draw();
+    
+                spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
+                spr.alpha = 1;
+                spr.color = FlxColor.WHITE;
+                spr.draw();
+            };
+    
+            boyfriend.onDraw = (spr:Character) -> {
+                spr.setColorTransform(0, 0, 0, 0.35);
+                spr.offset.set(-spr.globalOffset.x + 20, -spr.globalOffset.y + 10);
+                spr.draw();
+    
+                spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
+                spr.alpha = 1;
+                spr.color = FlxColor.WHITE;
+    
+                spr.draw();
+            };
             colorShader.hue = -30;
 	        colorShader.saturation = 20;
 	        colorShader.brightness = -30;
-            zoomTween.cancel();
             for (i in [dad, boyfriend]) i.y -= 200;
             boyfriend.x += 300;
-            camGame.flash(FlxColor.BLACK, 40);
+            camHUD.flash(FlxColor.BLACK, 40);
             add(radio);
             insert(0, bg2);
             remove(bg1);
+        case 1581:
+            FlxTween.tween(camGame, {zoom: 1.2}, 22, {ease: FlxEase.backinOut});
+        case 1665:
+            camGame.alpha = 0;
+        case 1675:
+            FlxTween.tween(camHUD, {alpha: 0}, 0.5, {ease: FlxEase.backinOut});
     }
 }
