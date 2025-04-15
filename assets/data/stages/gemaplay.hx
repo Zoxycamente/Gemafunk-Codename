@@ -7,7 +7,7 @@ function create() {
 	defaultCamZoom = 0.8;
 }
 function postCreate() {
-    trace("DAD X" + dad.x, "DAD Y" + dad.y,  "BF X" + boyfriend.x, "BF Y" + boyfriend.y);
+    trace("dad X " + dad.x, "dad Y " + dad.y, "\nbf X " + boyfriend.x, "bf Y " + boyfriend.y, "\n gf X e Y," + gf.x + gf.y);
     colorShader.hue = -40;
 	colorShader.saturation = 5;
 	colorShader.brightness = -70;
@@ -30,11 +30,11 @@ function stepHit(curStep) {
             for (i in [camGame, camHUD]) {
                 zoomTween2 = FlxTween.tween(i, {zoom: 1.2}, 22, {ease: FlxEase.backinOut});
             }
-            for (i in [bg, fg, gf]) i.shader = colorShader;
+            for (i in [bg, fg]) i.shader = colorShader;
             for (elements in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, missesTxt, accuracyTxt]) elements.visible = false;
         case 640, 1494:
             zoomTween2.cancel();
-            for (i in [bg, fg, gf]) i.shader = null;
+            for (i in [bg, fg]) i.shader = null;
             for (elements in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, missesTxt, accuracyTxt]) elements.visible = true;
 
     }
