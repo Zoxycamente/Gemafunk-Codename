@@ -51,7 +51,7 @@ function onEvent(e) {
 function precacheCharacter(characterToApply:Character, newCharName:String, strumIDX:Int, ?offset) {
     if (charactersMap.exists(newCharName)) return charactersMap.get(newCharName);
     offset ??= {x: 0, y: 0};
-    var newChar = new Character(0, 0, newCharName, characterToApply.isPlayer);
+    public static var newChar = new Character(0, 0, newCharName, characterToApply.isPlayer);
     PlayState.instance.stage.applyCharStuff(newChar, newCharName, strumIDX);
     newChar.updateHitbox();
     newChar.exists = newChar.active = newChar.visible = false;

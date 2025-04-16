@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character y="100" sprite="Vitor4Depressivo" scale="1.1" icon="lixo" color="#AF66CE" holdTime="6.1">
+	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="36" y="43" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="59" y="-6" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="22" y="1" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="27" y="-19" fps="24" loop="false"/>
+</character>

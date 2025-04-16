@@ -4,12 +4,15 @@ var everchange:Bool = false;
 var zoomTween:FlxTween;
 var hudTween:FlxTween;
 
+public static var vito2:Character;
+
 var colorShader = new CustomShader("adjustColor");
 
 function create() {
 	defaultCamZoom = 0.7;
 }
 function postCreate() {
+    trace("dad X " + dad.x, "dad Y " + dad.y, "\nbf X " + boyfriend.x, "bf Y " + boyfriend.y);
     colorShader.hue = 10;
 	colorShader.saturation = 10;
 	colorShader.brightness = 10;
@@ -43,7 +46,15 @@ function stepHit(curStep) {
             camHUD.alpha = 1;
             zoomTween.cancel();
             hudTween.cancel();
-            dad.onDraw = (spr:Character) -> {
+
+            vito2 = new Character(dad.x, dad.y, "gemaTRISTE", false);
+            remove(dad);
+            vito2.active = true;
+            insert(members.indexOf(boyfriend), vito2);
+            vito2.animation?.curAnim?.curFrame = dad.animation?.curAnim?.curFrame;
+	        strumLines.members[0].characters[0] = vito2;
+
+            vito2.onDraw = (spr:Character) -> {
                 spr.setColorTransform(0, 0, 0, 0.35);
                 spr.offset.set(-spr.globalOffset.x - 20, -spr.globalOffset.y + 10);
                 spr.draw();
