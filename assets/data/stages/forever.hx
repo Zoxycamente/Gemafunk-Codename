@@ -40,56 +40,61 @@ function stepHit(curStep) {
                 zoomTween = FlxTween.tween(i, {zoom: 1.2}, 6, {ease: FlxEase.backinOut});
                 hudTween = FlxTween.tween(camHUD, {alpha: 0}, 5.5, {ease: FlxEase.backinOut});
                 i.shake(0.002, 5, null, true);
-
             }
         case 1249:
             camHUD.alpha = 1;
-            zoomTween.cancel();
-            hudTween.cancel();
-
-            vito2 = new Character(dad.x, dad.y, "gemaTRISTE", false);
-            remove(dad);
-            vito2.active = true;
-            insert(members.indexOf(boyfriend), vito2);
-            vito2.animation?.curAnim?.curFrame = dad.animation?.curAnim?.curFrame;
-	        strumLines.members[0].characters[0] = vito2;
-
-            vito2.onDraw = (spr:Character) -> {
-                spr.setColorTransform(0, 0, 0, 0.35);
-                spr.offset.set(-spr.globalOffset.x - 20, -spr.globalOffset.y + 10);
-                spr.draw();
-    
-                spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
-                spr.alpha = 1;
-                spr.color = FlxColor.WHITE;
-                spr.draw();
-            };
-    
-            boyfriend.onDraw = (spr:Character) -> {
-                spr.setColorTransform(0, 0, 0, 0.35);
-                spr.offset.set(-spr.globalOffset.x + 20, -spr.globalOffset.y + 10);
-                spr.draw();
-    
-                spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
-                spr.alpha = 1;
-                spr.color = FlxColor.WHITE;
-    
-                spr.draw();
-            };
-            colorShader.hue = -30;
-	        colorShader.saturation = 20;
-	        colorShader.brightness = -30;
-            for (i in [dad, boyfriend]) i.y -= 200;
-            boyfriend.x += 300;
+            FlxTween.cancelTweensOf(zoomTween);
+            FlxTween.cancelTweensOf(hudTween);
+            buceta();
             camHUD.flash(FlxColor.BLACK, 40);
-            add(radio);
-            insert(0, bg2);
-            remove(bg1);
         case 1581:
             FlxTween.tween(camGame, {zoom: 1.2}, 22, {ease: FlxEase.backinOut});
         case 1665:
+            camHUD.flash(FlxColor.WHITE, 0.6);
             camGame.alpha = 0;
         case 1675:
             FlxTween.tween(camHUD, {alpha: 0}, 0.5, {ease: FlxEase.backinOut});
     }
+}
+
+function buceta() {
+    colorShader.hue = -30;
+    colorShader.saturation = 20;
+	colorShader.brightness = -30;
+    for (i in [dad, boyfriend]) i.y -= 200;
+    boyfriend.x += 300;
+
+    add(radio);
+    insert(0, bg2);
+    remove(bg1);
+
+    vito2 = new Character(dad.x, dad.y, "gemaTRISTE", false);
+    remove(dad);
+    vito2.active = true;
+    insert(members.indexOf(boyfriend), vito2);
+    vito2.animation?.curAnim?.curFrame = dad.animation?.curAnim?.curFrame;
+    strumLines.members[0].characters[0] = vito2;
+
+    vito2.onDraw = (spr:Character) -> {
+        spr.setColorTransform(0, 0, 0, 0.35);
+        spr.offset.set(-spr.globalOffset.x - 20, -spr.globalOffset.y + 10);
+        spr.draw();
+
+        spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
+        spr.alpha = 1;
+        spr.color = FlxColor.WHITE;
+        spr.draw();
+    };
+
+    boyfriend.onDraw = (spr:Character) -> {
+        spr.setColorTransform(0, 0, 0, 0.35);
+        spr.offset.set(-spr.globalOffset.x + 20, -spr.globalOffset.y + 10);
+        spr.draw();
+
+        spr.offset.set(-spr.globalOffset.x, -spr.globalOffset.y);
+        spr.alpha = 1;
+        spr.color = FlxColor.WHITE;
+
+        spr.draw();
+    };
 }

@@ -1,5 +1,3 @@
-import openfl.display.BlendMode;
-import funkin.menus.MainMenuState;
 import funkin.backend.scripting.events.MenuChangeEvent;
 import funkin.backend.scripting.events.NameEvent;
 import funkin.backend.scripting.EventManager;
@@ -7,14 +5,9 @@ import funkin.menus.credits.CreditsMain;
 import funkin.options.OptionsMenu;
 import funkin.editors.EditorPicker;
 import funkin.menus.ModSwitchMenu;
-import flixel.math.FlxPoint;
-import flixel.effects.FlxFlicker;
 import flixel.addons.display.FlxBackdrop;
 import funkin.backend.utils.CoolUtil;
-import openfl.text.TextFormat;
 import flixel.text.FlxTextBorderStyle;
-import flixel.input.keyboard.FlxKey;
-import funkin.backend.utils.WindowUtils;
 
 var optionShit:Array<String> = ["storymode", "tracks", "credits", "options", "gallery"];
 
@@ -39,7 +32,6 @@ function create() {
     gradiente = new FlxSprite(-320,-400).loadGraphic(Paths.image('menus/mainmenu/gradiente'));
     gradiente.antialiasing = true;
     gradiente.scale.set(0.5,0.5);
-    gradiente.blend = BlendMode.OVERLAY;
 	gradiente.scrollFactor.set(3, 3);
     add(gradiente);
 
@@ -135,7 +127,6 @@ function selectItem() {
             openSubState(new ModSubState("substate irado"));
             selectedSomethin = persistentUpdate = false;
             persistentDraw = true;
-
            case 'tracks': FlxG.switchState(new FreeplayState());
            case 'credits': FlxG.switchState(new CreditsMain());
            case 'options': FlxG.switchState(new OptionsMenu());
