@@ -13,7 +13,7 @@ function create() {
 }
 function postCreate() {
     trace("dad X " + dad.x, "dad Y " + dad.y, "\nbf X " + boyfriend.x, "bf Y " + boyfriend.y);
-    colorShader.hue = 10;
+    colorShader.hue = 17;
 	colorShader.saturation = 10;
 	colorShader.brightness = 10;
 
