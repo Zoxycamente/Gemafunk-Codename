@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="www.xvideos.com.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Idlen0000" x="1014" y="5363" width="1037" height="760" frameX="-172" frameY="-396" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Idlen0001" x="6282" y="0" width="995" height="800" frameX="-195" frameY="-356" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Idlen0002" x="6282" y="1629" width="934" height="841" frameX="-222" frameY="-315" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Idlen0003" x="6282" y="1629" width="934" height="841" frameX="-222" frameY="-315" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Idlen0004" x="6282" y="1629" width="934" height="841" frameX="-222" frameY="-315" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Rightn0000" x="1017" y="3560" width="964" height="913" frameX="-222" frameY="-243" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Rightn0001" x="0" y="4480" width="954" height="883" frameX="-222" frameY="-273" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Downn0000" x="2269" y="2686" width="1133" height="719" frameX="-146" frameY="-437" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Downn0001" x="0" y="5363" width="1014" height="796" frameX="-193" frameY="-360" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Leftn0000" x="1981" y="3560" width="964" height="913" frameX="-192" frameY="-243" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Leftn0001" x="2945" y="3560" width="954" height="883" frameX="-202" frameY="-273" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Upn0000" x="5390" y="3026" width="804" height="1030" frameX="-286" frameY="-126" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="Upn0001" x="5390" y="0" width="892" height="980" frameX="-234" frameY="-176" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="TelaAzul0000" x="6282" y="2470" width="934" height="841" frameX="-222" frameY="-315" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBravo0000" x="0" y="2686" width="1095" height="874" frameX="-144" frameY="-286" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBravo0001" x="0" y="3560" width="1017" height="920" frameX="-184" frameY="-240" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBravo0002" x="3568" y="1987" width="942" height="942" frameX="-218" frameY="-218" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBravo0003" x="3568" y="1987" width="942" height="942" frameX="-218" frameY="-218" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBravo0004" x="3568" y="1987" width="942" height="942" frameX="-218" frameY="-218" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="RightBravo0000" x="1228" y="825" width="1137" height="878" frameX="-218" frameY="-282" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="RightBravo0001" x="0" y="1737" width="1033" height="949" frameX="-218" frameY="-211" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="DownBravo0000" x="1112" y="6159" width="1214" height="387" frameX="-84" frameY="-775" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="DownBravo0001" x="0" y="6159" width="1112" height="507" frameX="-129" frameY="-655" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="LeftBravo0000" x="2466" y="0" width="1102" height="903" frameX="-58" frameY="-257" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="LeftBravo0001" x="3568" y="0" width="985" height="961" frameX="-175" frameY="-199" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="UpBravo0000" x="5390" y="980" width="785" height="1069" frameX="-308" frameY="-93" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="UpBravo0001" x="3568" y="961" width="888" height="1026" frameX="-253" frameY="-134" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleFalando0000" x="954" y="4480" width="1221" height="662" frameX="-73" frameY="-495" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleFalando0001" x="1095" y="2686" width="1174" height="797" frameX="-91" frameY="-360" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleFalando0002" x="2166" y="1737" width="1100" height="860" frameX="-139" frameY="-297" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleFalando0003" x="2166" y="1737" width="1100" height="860" frameX="-139" frameY="-297" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleFalando0004" x="2166" y="1737" width="1100" height="860" frameX="-139" frameY="-297" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="RightFalando0000" x="0" y="0" width="1228" height="851" frameX="-139" frameY="-306" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="RightFalando0001" x="1033" y="1737" width="1133" height="861" frameX="-139" frameY="-296" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="DownFalando0000" x="3433" y="4480" width="1331" height="536" frameX="-26" frameY="-621" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="DownFalando0001" x="2175" y="4480" width="1258" height="624" frameX="-59" frameY="-533" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="LeftFalando0000" x="1228" y="0" width="1238" height="825" frameX="-1" frameY="-332" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="LeftFalando0001" x="0" y="851" width="1162" height="886" frameX="-77" frameY="-271" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="UpFalando0000" x="4553" y="0" width="837" height="1059" frameX="-266" frameY="-98" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="UpFalando0001" x="5390" y="2049" width="848" height="977" frameX="-235" frameY="-180" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBeijo0000" x="4139" y="5363" width="1048" height="680" frameX="-160" frameY="-473" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBeijo0001" x="6282" y="3311" width="961" height="786" frameX="-207" frameY="-367" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBeijo0002" x="6282" y="4097" width="880" height="827" frameX="-248" frameY="-325" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBeijo0003" x="6282" y="4097" width="880" height="827" frameX="-248" frameY="-325" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="IdleBeijo0004" x="6282" y="4097" width="880" height="827" frameX="-248" frameY="-325" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="RightBeijo0000" x="3097" y="5363" width="1042" height="732" frameX="-248" frameY="-420" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="RightBeijo0001" x="2466" y="903" width="981" height="834" frameX="-248" frameY="-318" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="DownBeijo0000" x="4764" y="4480" width="1150" height="522" frameX="-100" frameY="-630" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="DownBeijo0001" x="5187" y="5363" width="988" height="674" frameX="-199" frameY="-478" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="LeftBeijo0000" x="2051" y="5363" width="1046" height="746" frameX="-82" frameY="-406" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="LeftBeijo0001" x="6282" y="800" width="953" height="829" frameX="-175" frameY="-323" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="UpBeijo0000" x="4553" y="1059" width="803" height="1020" frameX="-276" frameY="-132" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="UpBeijo0001" x="6282" y="4924" width="814" height="884" frameX="-280" frameY="-268" frameWidth="1378" frameHeight="1378"/>
+</TextureAtlas>

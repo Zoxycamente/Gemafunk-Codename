@@ -40,6 +40,7 @@ function create() {
     vito.animation.addByPrefix('idle', 'vito menu', 24, true);
     vito.animation.play('idle'); 
     vito.scrollFactor.set(2, 2);
+    vito.antialiasing = true;
     add(vito);
 
     preto = new FlxSprite(-450,-400).loadGraphic(Paths.image('menus/mainmenu/preto'));
@@ -82,7 +83,6 @@ function update(elapsed:Float) {
     FlxG.camera.scroll.x = FlxMath.lerp(FlxG.camera.scroll.x, (FlxG.mouse.screenX-(FlxG.width/2)) * 0.028, (1/30)*240*elapsed);
 	FlxG.camera.scroll.y = FlxMath.lerp(FlxG.camera.scroll.y, (FlxG.mouse.screenY-6-(FlxG.height/2)) * 0.028, (1/30)*240*elapsed);
 
-    if (FlxG.sound.music.volume < 0.8) FlxG.sound.music.volume += 0.5 * elapsed;
 
     if (!selectedSomethin) {
         if (canAccessDebugMenus) {

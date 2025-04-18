@@ -1,0 +1,24 @@
+<!DOCTYPE codename-engine-character>
+<character y="100" sprite="www.xvideos.com" scale="0.6" icon="www.xvideos.com" color="#AE66CE" holdTime="6.1">
+	<anim name="idle" anim="Idlen" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="Upn" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Leftn" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Rightn" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Downn" x="0" y="0" fps="24" loop="false"/>
+	<anim name="telaazul" anim="TelaAzul" x="0" y="0" fps="24" loop="false"/>
+	<anim name="idle-alt" anim="IdleBravo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP-alt" anim="UpBravo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT-alt" anim="LeftBravo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT-alt" anim="RightBravo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN-alt" anim="DownBravo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="idle-falando" anim="IdleFalando" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP-falando" anim="UpFalando" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT-falando" anim="LeftFalando" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT-falando" anim="RightFalando" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN-falando" anim="DownFalando" x="0" y="0" fps="24" loop="false"/>
+	<anim name="idle-beijo" anim="IdleBeijo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP-beijo" anim="UpBeijo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT-beijo" anim="LeftBeijo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT-beijo" anim="RightBeijo" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN-beijo" anim="DownBeijo" x="0" y="0" fps="24" loop="false"/>
+</character>
