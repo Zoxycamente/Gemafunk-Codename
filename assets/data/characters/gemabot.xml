@@ -5,7 +5,7 @@
 	<anim name="singLEFT" anim="Leftn" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singRIGHT" anim="Rightn" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="Downn" x="0" y="0" fps="24" loop="false"/>
-	<anim name="telaazul" anim="TelaAzul" x="0" y="0" fps="24" loop="false"/>
+	<anim name="telaazul" anim="TelaAzul" x="0" y="0" fps="24" loop="true"/>
 	<anim name="idle-alt" anim="IdleBravo" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singUP-alt" anim="UpBravo" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singLEFT-alt" anim="LeftBravo" x="0" y="0" fps="24" loop="false"/>

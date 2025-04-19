@@ -5,6 +5,7 @@ function create() {
     dropThing = new FlxBackdrop(Paths.image('editors/bgs/charter'));
 	dropThing.alpha = 0;
     dropThing.velocity.set(-200, -200);
+    dropThing.color = FlxColor.ORANGE;
     add(dropThing);
 
     g = new FlxText(340, 125, 0, "Agora não amigão!");

@@ -83,8 +83,7 @@ function update(elapsed:Float) {
     FlxG.camera.scroll.x = FlxMath.lerp(FlxG.camera.scroll.x, (FlxG.mouse.screenX-(FlxG.width/2)) * 0.028, (1/30)*240*elapsed);
 	FlxG.camera.scroll.y = FlxMath.lerp(FlxG.camera.scroll.y, (FlxG.mouse.screenY-6-(FlxG.height/2)) * 0.028, (1/30)*240*elapsed);
 
-
-    if (!selectedSomethin) {
+	if (!selectedSomethin) {
         if (canAccessDebugMenus) {
             if (FlxG.keys.justPressed.SEVEN) {
                 persistentUpdate = false;
@@ -97,9 +96,7 @@ function update(elapsed:Float) {
             persistentUpdate = false;
             persistentDraw = true;
         }
-    }
 
-	if (!selectedSomethin) {
         if (FlxG.mouse.justPressed) selectItem();
 		for (i in menuItems.members) {
 			if (FlxG.mouse.overlaps(i)) {
@@ -124,16 +121,19 @@ function selectItem() {
         if (event.cancelled) return;
         switch (daChoice)   {
            case 'storymode': 
-            openSubState(new ModSubState("substate irado"));
-            selectedSomethin = persistentUpdate = false;
-            persistentDraw = true;
-           case 'tracks': FlxG.switchState(new FreeplayState());
-           case 'credits': FlxG.switchState(new CreditsMain());
-           case 'options': FlxG.switchState(new OptionsMenu());
+                openSubState(new ModSubState("substate irado"));
+                selectedSomethin = persistentUpdate = false;
+                persistentDraw = true;
+           case 'tracks': 
+                FlxG.switchState(new FreeplayState());
+           case 'credits': 
+                FlxG.switchState(new CreditsMain());
+           case 'options': 
+                FlxG.switchState(new OptionsMenu());
            case 'gallery': 
-            openSubState(new ModSubState("substate irado"));
-            selectedSomethin = persistentUpdate = false;
-            persistentDraw = true;
+                openSubState(new ModSubState("substate irado"));
+                selectedSomethin = persistentUpdate = false;
+                persistentDraw = true;
     }});
 }
 

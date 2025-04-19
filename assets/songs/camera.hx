@@ -12,8 +12,8 @@ function postCreate(){
 
 function postUpdate(){
     for (i in strumLines.members[curCameraTarget].characters) {
-        smoothCamFollow.x += i.getAnimName() == "singRIGHT" ? cameraMovementStrength : i.getAnimName() == "singLEFT" ? -cameraMovementStrength : 0;
-        smoothCamFollow.y += i.getAnimName() == "singDOWN" ? cameraMovementStrength : i.getAnimName() == "singUP" ? -cameraMovementStrength : 0;
+        smoothCamFollow.x += i.getAnimName() == "singRIGHT" || i.getAnimName() == "singRIGHT-alt" ? cameraMovementStrength : i.getAnimName() == "singLEFT" || i.getAnimName() == "singLEFT-alt" ? -cameraMovementStrength : 0;
+        smoothCamFollow.y += i.getAnimName() == "singDOWN" || i.getAnimName() == "singDOWN-alt" ? cameraMovementStrength : i.getAnimName() == "singUP" || i.getAnimName() == "singUP-alt" ? -cameraMovementStrength : 0;
     }
 }
 
