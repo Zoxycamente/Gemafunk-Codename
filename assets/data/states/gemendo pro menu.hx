@@ -22,6 +22,8 @@ FlxG.mouse.enabled = true;
 FlxG.mouse.visible = true;
 
 function create() {
+    CoolUtil.playMenuSong();
+
    // FlxG.camera.zoom = 0.3;
     bg = new FlxBackdrop(Paths.image('menus/mainmenu/fundo'));
     bg.velocity.set(-50, 50);
@@ -82,6 +84,9 @@ function update(elapsed:Float) {
 
     FlxG.camera.scroll.x = FlxMath.lerp(FlxG.camera.scroll.x, (FlxG.mouse.screenX-(FlxG.width/2)) * 0.028, (1/30)*240*elapsed);
 	FlxG.camera.scroll.y = FlxMath.lerp(FlxG.camera.scroll.y, (FlxG.mouse.screenY-6-(FlxG.height/2)) * 0.028, (1/30)*240*elapsed);
+
+    if (FlxG.sound.music.volume < 0.8) FlxG.sound.music.volume += 0.5 * elapsed;
+
 
 	if (!selectedSomethin) {
         if (canAccessDebugMenus) {

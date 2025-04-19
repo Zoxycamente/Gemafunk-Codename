@@ -7,6 +7,7 @@ function create() {
     defaultCamZoom = 0.8;
 }
 function postCreate() {
+    dad.y = boyfriend.y -= 100;
     camGame.alpha = camHUD.alpha = 0;
 
     colorShader.hue = 40;
