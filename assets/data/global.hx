@@ -32,8 +32,6 @@ static function updateFNFcounter(toggle:Bool) {
 }
 
 function preStateSwitch() {
-    FlxG.state.forEachOfType(FlxText, text -> text.font = Paths.font("Comic Sans MS.ttf"));
-
     updateFNFcounter(true);
     WindowUtils.winTitle = windowName;
     Framerate.codenameBuildField.text = windowName;

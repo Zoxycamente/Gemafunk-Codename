@@ -6,6 +6,7 @@ var pressedEnterBool:Bool = false;
 function create() {
     logo = new FunkinSprite(340, 100, Paths.image('menus/titlescreen/fita da o botao dele pra homens peludos'));
     logo.addAnim('bop', 'bop', 24, false);
+    logo.scale.set(0.8, 0.8);
 
     enter = new FlxText(340, 125, 0, "Pressione Enter");
     enter.setFormat(Paths.font("Comic Sans MS.ttf"), 60, FlxColor.CYAN, "center", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
