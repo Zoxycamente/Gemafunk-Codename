@@ -3,6 +3,8 @@ function create() {
     defaultCamZoom = 0.5;
 }
 function postCreate() {
+    remove(iconP2);
+    insert(1111, iconP2);
     bg = new FunkinSprite(-300, -150, Paths.image("stages/gemabot/bg"));
     bg.addAnim("idle", "calcinhamijada", 24, true);
     bg.playAnim("idle");

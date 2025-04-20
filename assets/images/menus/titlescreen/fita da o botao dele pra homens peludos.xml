@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fita da o botao dele pra homens peludos.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bop0000" x="0" y="0" width="541" height="465" frameX="-25" frameY="-25" frameWidth="592" frameHeight="515"/>
+	<SubTexture name="bop0001" x="0" y="0" width="541" height="465" frameX="-25" frameY="-25" frameWidth="592" frameHeight="515"/>
+	<SubTexture name="bop0002" x="541" y="0" width="592" height="515"/>
+	<SubTexture name="bop0003" x="541" y="0" width="592" height="515"/>
+	<SubTexture name="bop0004" x="1133" y="0" width="552" height="478" frameX="-20" frameY="-19" frameWidth="592" frameHeight="515"/>
+	<SubTexture name="bop0005" x="1133" y="0" width="552" height="478" frameX="-20" frameY="-19" frameWidth="592" frameHeight="515"/>
+	<SubTexture name="bop0006" x="0" y="515" width="544" height="470" frameX="-24" frameY="-23" frameWidth="592" frameHeight="515"/>
+</TextureAtlas>
