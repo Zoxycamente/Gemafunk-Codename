@@ -2,11 +2,17 @@ import flixel.addons.display.FlxBackdrop;
 import openfl.display.BlendMode;
 
 var colorShader = new CustomShader("adjustColor");
+var wiggle = new CustomShader("ripple");
+var penis:Int = 0;
 
 function create() {
     defaultCamZoom = 0.8;
 }
 function postCreate() {
+    wiggle.length = 5;
+    wiggle.intensityReversed = health-100;
+    wiggle.speed = 2;
+
     dad.y = boyfriend.y -= 100;
     camGame.alpha = camHUD.alpha = 0;
 
@@ -29,6 +35,8 @@ function postCreate() {
 
 var e:Float = 0;
 function update(elapsed:Float) {
+    wiggle.iTime = Conductor.songPosition/1000;
+
 	e += 10 * elapsed;
     camGame.angle = ((1 - Math.sin((Math.PI * e) / 30)) * 2) - 2;
     camHUD.angle = ((1 - Math.sin((Math.PI * e) / 30)) * 2) - 2;
@@ -37,5 +45,15 @@ function update(elapsed:Float) {
 function onSongStart() {
     for (i in [camHUD, camGame]) {
         FlxTween.tween(i, {alpha: 1}, 10, {ease: FlxEase.backinOut});
+    }
+}
+
+function beatHit(curBeat) {
+    switch(curBeat) {
+        case 227:
+            camGame.addShader(wiggle);
+            camHUD.addShader(wiggle);
+        case 355:
+            wiggle.intensityReversed = health-50;
     }
 }
