@@ -1,0 +1,9 @@
+<stage zoom="7" name="dungeon" folder="stages/silicat/">
+    <sprite name="bg" x="0" y="0" sprite="bg"/>
+    <girlfriend/>
+    <dad/>
+    <boyfriend/>
+    <sprite name="fg" x="0" y="0" sprite="fg"/>
+
+    <ext script="silicat" folder="data/stages/" isShortLived="false" importStageSprites="true" loadBefore="false" />
+</stage>

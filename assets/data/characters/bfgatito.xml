@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character x="-130" y="10" camx="100" camy="75" sprite="thousandFloors/bf-rabdit" icon="gf" color="#A5004D" isPlayer="true" flipX="true">
+	<anim name="idle" anim="Idle" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singUP" anim="Up" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singLEFT" anim="Left" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singRIGHT" anim="Right" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singDOWN" anim="Down" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singUPmiss" anim="UMISS" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singLEFTmiss" anim="LMISS" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singRIGHTmiss" anim="RMISS" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singDOWNmiss" anim="DMISS" x="0" y="0" fps="12" loop="false"/>
+</character>
