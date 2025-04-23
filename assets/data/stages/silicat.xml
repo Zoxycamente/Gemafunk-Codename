@@ -1,4 +1,4 @@
-<stage zoom="7" name="dungeon" folder="stages/silicat/">
+<stage zoom="7" name="dungeon" folder="stages/silicat/" startCamPosX="1750" startCamPosY="750">
     <sprite name="bg" x="0" y="0" sprite="bg"/>
     <girlfriend/>
     <dad/>

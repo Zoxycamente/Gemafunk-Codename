@@ -21,6 +21,24 @@ function create()
     boyfriend.x += 500;
 
     FlxG.camera.antialiasing = false;
-    FlxG.camera.pixelPerfectRender = true;
     FlxG.stage.quality = "low";
+
+    FlxG.camera.addShader(colorShader);
+    //colorShader.hue = 150;
+    colorShader.saturation = -100;
+    colorShader.contrast = 20;
+}
+
+var colorShader = new CustomShader("adjustColor");
+
+var hues = [100, 60, 80, -20, -50, 0];
+
+function beatHit(b)
+{
+    if (b % 4 == 0)
+    {
+        trace("new color!");
+
+        colorShader.hue = hues[FlxG.random.int(0, hues.length)];
+    }
 }
