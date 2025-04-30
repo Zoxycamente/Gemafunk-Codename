@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Discord.png">
+	<!-- Created with Adobe Animate version 24.0.3.19 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Discord0000" x="0" y="0" width="107" height="103"/>
+	<SubTexture name="Discord0001" x="0" y="0" width="107" height="103"/>
+	<SubTexture name="Discord0002" x="0" y="0" width="107" height="103"/>
+	<SubTexture name="Discord0003" x="0" y="0" width="107" height="103"/>
+	<SubTexture name="Discord0004" x="107" y="0" width="107" height="103"/>
+	<SubTexture name="Discord0005" x="107" y="0" width="107" height="103"/>
+	<SubTexture name="Discord0006" x="107" y="0" width="107" height="103"/>
+	<SubTexture name="Discord0007" x="107" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem0000" x="214" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem0001" x="214" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem0002" x="214" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem0003" x="214" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem0004" x="321" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem0005" x="321" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem0006" x="321" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem0007" x="321" y="0" width="107" height="103"/>
+	<SubTexture name="Discord mensagem clicado0000" x="0" y="103" width="121" height="106" frameX="-2" frameY="0" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0001" x="0" y="103" width="121" height="106" frameX="-2" frameY="0" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0002" x="121" y="103" width="122" height="105" frameX="-2" frameY="0" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0003" x="121" y="103" width="122" height="105" frameX="-2" frameY="0" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0004" x="243" y="103" width="124" height="105" frameX="0" frameY="0" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0005" x="243" y="103" width="124" height="105" frameX="0" frameY="0" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0006" x="367" y="103" width="107" height="103" frameX="-17" frameY="-2" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0007" x="367" y="103" width="107" height="103" frameX="-17" frameY="-2" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0008" x="367" y="103" width="107" height="103" frameX="-17" frameY="-2" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0009" x="367" y="103" width="107" height="103" frameX="-17" frameY="-2" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0010" x="367" y="103" width="107" height="103" frameX="-17" frameY="-2" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0011" x="367" y="103" width="107" height="103" frameX="-17" frameY="-2" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0012" x="367" y="103" width="107" height="103" frameX="-17" frameY="-2" frameWidth="124" frameHeight="106"/>
+	<SubTexture name="Discord mensagem clicado0013" x="367" y="103" width="107" height="103" frameX="-17" frameY="-2" frameWidth="124" frameHeight="106"/>
+</TextureAtlas>

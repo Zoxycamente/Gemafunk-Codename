@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Padlock.png">
+	<!-- Created with Adobe Animate version 24.0.3.19 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Cadiado Destrancado0000" x="0" y="0" width="170" height="198" frameX="0" frameY="0" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0001" x="0" y="0" width="170" height="198" frameX="0" frameY="0" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0002" x="170" y="0" width="172" height="193" frameX="0" frameY="-4" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0003" x="170" y="0" width="172" height="193" frameX="0" frameY="-4" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0004" x="342" y="0" width="173" height="193" frameX="0" frameY="-4" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0005" x="342" y="0" width="173" height="193" frameX="0" frameY="-4" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0006" x="515" y="0" width="131" height="193" frameX="0" frameY="-4" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0007" x="515" y="0" width="131" height="193" frameX="0" frameY="-4" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0008" x="515" y="0" width="131" height="193" frameX="0" frameY="-4" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Destrancado0009" x="515" y="0" width="131" height="193" frameX="0" frameY="-4" frameWidth="173" frameHeight="198"/>
+	<SubTexture name="Cadiado Parado0000" x="646" y="0" width="131" height="188"/>
+	<SubTexture name="Cadiado Parado0001" x="646" y="0" width="131" height="188"/>
+	<SubTexture name="Cadiado Parado0002" x="646" y="0" width="131" height="188"/>
+	<SubTexture name="Cadiado Parado0003" x="646" y="0" width="131" height="188"/>
+	<SubTexture name="Cadiado Parado0004" x="777" y="0" width="131" height="188"/>
+	<SubTexture name="Cadiado Parado0005" x="777" y="0" width="131" height="188"/>
+	<SubTexture name="Cadiado Parado0006" x="777" y="0" width="131" height="188"/>
+	<SubTexture name="Cadiado Parado0007" x="777" y="0" width="131" height="188"/>
+	<SubTexture name="Cadiado Trancado0000" x="0" y="198" width="172" height="190" frameX="-1" frameY="0" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0001" x="0" y="198" width="172" height="190" frameX="-1" frameY="0" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0002" x="172" y="198" width="170" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0003" x="172" y="198" width="170" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0004" x="172" y="198" width="170" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0005" x="172" y="198" width="170" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0006" x="342" y="198" width="173" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0007" x="342" y="198" width="173" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0008" x="342" y="198" width="173" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0009" x="342" y="198" width="173" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0010" x="646" y="0" width="131" height="188" frameX="0" frameY="-1" frameWidth="131" frameHeight="188"/>
+	<SubTexture name="Cadiado Trancado0011" x="646" y="0" width="131" height="188" frameX="0" frameY="-1" frameWidth="131" frameHeight="188"/>
+	<SubTexture name="Cadiado Trancado0012" x="646" y="0" width="131" height="188" frameX="0" frameY="-1" frameWidth="131" frameHeight="188"/>
+	<SubTexture name="Cadiado Trancado0013" x="646" y="0" width="131" height="188" frameX="0" frameY="-1" frameWidth="131" frameHeight="188"/>
+	<SubTexture name="Cadiado Trancado0014" x="515" y="198" width="131" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0015" x="515" y="198" width="131" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0016" x="515" y="198" width="131" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+	<SubTexture name="Cadiado Trancado0017" x="515" y="198" width="131" height="188" frameX="0" frameY="-1" frameWidth="173" frameHeight="190"/>
+</TextureAtlas>
