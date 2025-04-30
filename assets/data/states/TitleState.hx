@@ -19,11 +19,11 @@ function create() {
     bg.scale.set(0.5,0.5);
 
     black = new FlxSprite(-110,-100).makeSolid(1500, 200, FlxColor.BLACK);
-    add(black);
     black2 = new FlxSprite(-110,600).makeSolid(1500, 200, FlxColor.BLACK);
-    add(black2);
 
-    insert(10, enter);
+    insert(3, enter);
+    insert(2, black);
+    insert(2, black2);
     insert(1, logo);
     insert(1, bg); 
 }
