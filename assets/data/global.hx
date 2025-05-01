@@ -12,12 +12,14 @@ WindowUtils.winTitle = windowName;
 function postStateSwitch(){
     if(!Std.isOfType(FlxG.state, PlayState))
         WindowUtils.winTitle = windowName;
+
 }
 
 function update(elapsed:Float) if (FlxG.keys.justPressed.F5) FlxG.resetState();
 
 var redirectStates:Map<FlxState, String> = [
     MainMenuState    => "gemendo pro menu",
+    FreeplayState    => "GemaFunkFreeplay",
 ];
 
 static function updateFNFcounter(toggle:Bool) {
@@ -29,6 +31,11 @@ static function updateFNFcounter(toggle:Bool) {
    Framerate.memoryCounter.memoryText.defaultTextFormat = format;
    Framerate.memoryCounter.memoryPeakText.defaultTextFormat = format;
    Framerate.codenameBuildField.defaultTextFormat = format;
+}
+
+function update()
+{
+    if (FlxG.keys.justPressed.F5) FlxG.resetState();
 }
 
 function preStateSwitch() {

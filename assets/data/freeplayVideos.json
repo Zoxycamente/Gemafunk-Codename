@@ -1,25 +1,33 @@
 {
     "videos":
-    {
-        "gemaplay":
+    [
         {
-            "titulo": "Me inseri dentro do mundo do FNF (de novo)",
+            "name": "Gemaplay",
+            "title": "Me inseri dentro do mundo do FNF (de novo)",
+            "views": 69,
+            "time": [1, "hora"],
             "capa": 1
         },
-        "4ever":
         {
-            "titulo": "A ascensão do Yun Li - 4Ever Gemafunk",
+            "name": "4Ever",
+            "title": "A ascensão do Yun Li - 4Ever Gemafunk",
+            "views": 32,
+            "time": [3, "meses"],
             "capa": 2
         },
-        "silicat":
         {
-            "titulo": "A torre de 100 andares - Silicat Gemafunk",
+            "name": "Silicat",
+            "title": "A torre de 100 andares - Silicat Gemafunk",
+            "views": 12,
+            "time": [5, "meses"],
             "capa": 3
         },
-        "tibba":
         {
-            "titulo": "vida boa vida boa",
+            "name": "Tibba",
+            "title": "Tipo o lanterna verde, mas o verde é da maconha - Tibba",
+            "views": 4,
+            "time": [20, "horas"],
             "capa": 4
         }
-    }
+    ]
 }
