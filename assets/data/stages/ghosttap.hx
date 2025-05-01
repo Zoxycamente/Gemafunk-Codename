@@ -3,9 +3,13 @@ var chatHud = new FlxCamera();
 function create() {
     FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
 
-	defaultCamZoom = 0.6;
+	defaultCamZoom = 1;
 }
 function postCreate() {
+    camFollow.x = 500;
+
+    camGame.alpha = 0;
+
     dad.alpha = iconP2.alpha = 0;
     boyfriend.y -= 240;
     dad.y = boyfriend.y-100;
@@ -27,20 +31,33 @@ function postCreate() {
 
 function beatHit(curBeat) {
     switch(curBeat) {
+        case 4:
+            camGame.alpha = 1;
         case 68:
             camGame.alpha = camHUD.alpha = 0;
         case 69:
             dad.alpha = iconP2.alpha = 1;
             health = 1;
         case 74:
+            defaultCamZoom = 0.9;
             camGame.alpha = camHUD.alpha = 0.2;
         case 75:
+            defaultCamZoom = 0.8;
             camGame.alpha = camHUD.alpha = 0.4;
         case 76:
+            defaultCamZoom = 0.7;
             camGame.alpha = camHUD.alpha = 0.6;
         case 77:
+            dad.playAnim('wave');
+            defaultCamZoom = 0.6;
             camGame.alpha = camHUD.alpha = 0.8;
         case 78:
             camGame.alpha = camHUD.alpha = 1;
+        case 202:
+            FlxTween.tween(dad.scale, {y: 6}, 6, {ease: FlxEase.backinOut});
+
     }
 }
+
+
+function update() chatHud.alpha = camGame.alpha;

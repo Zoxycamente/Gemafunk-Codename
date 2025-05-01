@@ -7,7 +7,7 @@ public var smoothCamFollow:FlxObject = new FlxObject(0, 0, 2, 2);
 
 function postCreate(){
     add(smoothCamFollow);
-    if (SONG.meta.name != "ghosttap" && "silicat") FlxG.camera.target = smoothCamFollow;
+    if (SONG.meta.name != "ghosttap" || "silicat") FlxG.camera.target = smoothCamFollow;
 }
 
 function postUpdate(){
