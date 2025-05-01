@@ -1,9 +1,9 @@
 <!DOCTYPE codename-engine-character>
-<character y="100" sprite="TheBoy" scale="0.57" flipX="true" camx="550" icon="fimosegames" color="#AE66CE" holdTime="6.1">
-	<anim name="idle" anim="Idle" x="0" y="0" fps="12" loop="false" indices="2..4,2..0"/>
-	<anim name="singUP" anim="Up" x="0" y="0" fps="12" loop="false"/>
-	<anim name="singRIGHT" anim="Left" x="0" y="0" fps="12" loop="false"/>
-	<anim name="singLEFT" anim="Right" x="0" y="0" fps="12" loop="false"/>
-	<anim name="singDOWN" anim="Down" x="0" y="0" fps="12" loop="false"/>
-	<anim name="medonho" anim="?????" x="0" y="0" fps="12" loop="false"/>
+<character y="100" sprite="TheBoy" scale="0.57" flipX="true" camx="600" icon="fimosegames" color="#AE66CE" holdTime="6.1">
+	<anim name="idle" anim="Idle" x="0" y="0" fps="10" loop="false" indices="2..4,2..0"/>
+	<anim name="singUP" anim="Up" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singRIGHT" anim="Left" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singLEFT" anim="Right" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singDOWN" anim="Down" x="0" y="0" fps="10" loop="false"/>
+	<anim name="medonho" anim="?????" x="0" y="0" fps="10" loop="true"/>
 </character>

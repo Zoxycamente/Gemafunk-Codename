@@ -1,13 +1,12 @@
 var chatHud = new FlxCamera();
 
 function create() {
-    FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
+   FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
 
 	defaultCamZoom = 1;
 }
 function postCreate() {
-    camFollow.x = 500;
-
+    trace(boyfriend.x, boyfriend.y, dad.x, dad.y);
     camGame.alpha = 0;
 
     dad.alpha = iconP2.alpha = 0;
@@ -20,6 +19,9 @@ function postCreate() {
     bg = new FlxSprite(-600, -260).loadGraphic(Paths.image("stages/ghosttap"));
     insert(0, bg);
 
+    us = new FlxSprite(boyfriend.x+100, boyfriend.y+600).loadGraphic(Paths.image("stages/1025_Sem_Titulo_20241217133850"));
+    
+    
     chat = new FunkinSprite(400, 320, Paths.image("stages/chat"));
     chat.addAnim("chat", "chat", 24, true);
     chat.playAnim("chat");
@@ -53,11 +55,15 @@ function beatHit(curBeat) {
             camGame.alpha = camHUD.alpha = 0.8;
         case 78:
             camGame.alpha = camHUD.alpha = 1;
+        case 176:
+            add(us);
+            boyfriend.playAnim('medonho');
+        case 177:
+            remove(us);
         case 202:
             FlxTween.tween(dad.scale, {y: 6}, 6, {ease: FlxEase.backinOut});
 
     }
 }
-
 
 function update() chatHud.alpha = camGame.alpha;
