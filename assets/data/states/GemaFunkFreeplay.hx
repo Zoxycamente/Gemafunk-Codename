@@ -1,16 +1,12 @@
-var mouse:FunkinSprite;
+var mouse, ytBar, discord:FunkinSprite;
 var uiCam:FlxCamera = new FlxCamera();
 
 var songsJson = CoolUtil.parseJson(Paths.json("freeplayVideos"));
 var songs = songsJson.videos;
-
-var ytBar:FunkinSprite;
-
 var canSelect:Bool = true;
 
 function create()
 {
-    trace("freeplay!");
     var dir = "menus/freeplay/";
     
     if (FlxG.save.data.passedSongs == null) FlxG.save.data.passedSongs = [];
@@ -41,6 +37,28 @@ function create()
     ytBar.cameras = [uiCam];
     ytBar.origin.x -= 640;
     ytBar.scale.x = 0.0001;
+    
+    discord = new FunkinSprite(FlxG.width - 160, FlxG.height - 120);
+    discord.frames = Paths.getSparrowAtlas(dir + "Discord");
+    var anims = ["mensagem idle", "mensagem click", "idle", "click"];
+    for (i in 0...anims.length) discord.animation.addByPrefix(anims[i], anims[i], 24, false);
+    discord.scrollFactor.set();
+
+    add(discord);
+
+    var chogs = FlxG.save.data.passedSongs;
+    discordPrefix = chogs.contains("gemabot") ? "" : "mensagem ";
+
+    var neededSongs = ["gemaplay", "4ever", "silicat", "tibba", "ghosttap"];
+    for (i in 0...neededSongs.length)
+    {
+        if (!chogs.contains(neededSongs[i]))
+            discord.visible = false;
+    }
+    discord.playAnim(discordPrefix + "idle");
+
+    discord.scale.set(1.2, 1.2);
+    FlxTween.tween(discord, {"scale.x": 1, "scale.y": 1}, 0.5, {ease: FlxEase.quintOut});
 
     mouse = new FunkinSprite(0, 0);
     mouse.frames = Paths.getSparrowAtlas(dir + "Mouse");
@@ -53,6 +71,8 @@ function create()
 
     CoolUtil.playMenuSong();
 }
+
+var discordPrefix = "";
 
 function generateSongs()
 {
@@ -108,7 +128,6 @@ function generateSongs()
 
         var songz = FlxG.save.data.passedSongs;
         var sogs = FlxG.save.data.unlockedSongs;
-        trace(songz);
 
         var songToUnlock = "";
 
@@ -120,13 +139,8 @@ function generateSongs()
         else if (songz.contains("tibba") && !sogs.contains("ghosttap")) songToUnlock = "ghosttap";
         else songToUnlock = "nada";
 
-        trace(songToUnlock);
         if (!sogs.contains(songToUnlock) && songToUnlock != "nada") sogs.push(songToUnlock);
         FlxG.save.data.unlockedSongs = sogs;
-
-        trace("is " + songs[i].name + " unlocked? " + unlocked);
-
-        trace(sogs);
 
         if (!unlocked)
         {
@@ -196,9 +210,9 @@ function update(e)
                     if (thumbs[i].getAnimName() == "bloqueado")
                     {
                         CoolUtil.playMenuSFX(2, 0.8);
-                        locks[i].animation.play("lockin", true);
+                        locks[i-1].animation.play("lockin", true);
 
-                        new FlxTimer().start(0.5, () -> locks[i].animation.play("lock", true));
+                        new FlxTimer().start(0.5, () -> locks[i-1].animation.play("lock", true));
                     }
                     else
                     {
@@ -208,6 +222,8 @@ function update(e)
                         new FlxTimer().start(0.1, function(t:FlxTimer) {
                             thumbs[i].scale.set(0.7, 0.7);
                             trace(songs[i].name.toLowerCase());
+
+                            CoolUtil.playMenuSFX(1, 0.8);
                                 
                             PlayState.loadSong(songs[i].name.toLowerCase(), "hard", false, false);
         
@@ -218,6 +234,22 @@ function update(e)
                         });
                     }
                 }
+            }
+
+            if(discord.visible && mouse.x > discord.x && mouse.x < discord.x + discord.width && mouse.y > discord.y && mouse.y < discord.y + discord.height)
+            {
+                CoolUtil.playMenuSFX(1, 0.8);
+                discord.playAnim(discordPrefix + "click", true);
+                discord.x -= 2;
+
+                canSelect = false;
+
+                PlayState.loadSong("gemabot", "hard", false, false);
+
+                new FlxTimer().start(0.5, function(t:FlxTimer) {
+                    FlxG.sound.music.stop();
+                    FlxG.switchState(new PlayState());
+                });
             }
         }
 
