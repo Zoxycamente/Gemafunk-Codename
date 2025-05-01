@@ -51,7 +51,7 @@ function create()
     mouse.scrollFactor.set();
     add(mouse);
 
-    if (FlxG.sound.music == null) CoolUtil.playMenuSong();
+    CoolUtil.playMenuSong();
 }
 
 function generateSongs()
@@ -67,9 +67,15 @@ function generateSongs()
         thumb.scale.set(0.7, 0.7);
 
         if(thumbs[thumbs.length - 1] != null)
+        {
             thumb.x = thumbs[thumbs.length - 1].x + thumbs[thumbs.length - 1].width + -110;
+            thumb.y = thumbs[thumbs.length - 1].y;
+        }
         else
+        {
             thumb.x = 50 * (i * 8);
+            thumb.y = 100;
+        }
 
         thumb.x -= 35;
 
@@ -91,7 +97,7 @@ function generateSongs()
         icone.scale.set(0.5, 0.5);
         add(icone);
 
-        var nome = new FunkinText(title.x, title.y + 50, 0, "Gemaplay Gemafunk", 16);
+        var nome = new FunkinText(title.x, title.y + 50, 0, songs[i].canal, 16);
         nome.font = Paths.font("arial.ttf");
         add(nome);
 
@@ -111,6 +117,7 @@ function generateSongs()
         if (songz.contains("gemaplay") && !sogs.contains("4ever")) songToUnlock = "4ever";
         else if (songz.contains("4ever") && !sogs.contains("silicat")) songToUnlock = "silicat";
         else if (songz.contains("silicat") && !sogs.contains("tibba")) songToUnlock = "tibba";
+        else if (songz.contains("tibba") && !sogs.contains("ghosttap")) songToUnlock = "ghosttap";
         else songToUnlock = "nada";
 
         trace(songToUnlock);
@@ -189,9 +196,9 @@ function update(e)
                     if (thumbs[i].getAnimName() == "bloqueado")
                     {
                         CoolUtil.playMenuSFX(2, 0.8);
-                        locks[i].playAnim("lockin", true);
+                        locks[i].animation.play("lockin", true);
 
-                        new FlxTimer().start(0.5, () -> lock.animation.play("lock", true));
+                        new FlxTimer().start(0.5, () -> locks[i].animation.play("lock", true));
                     }
                     else
                     {
@@ -218,6 +225,16 @@ function update(e)
             FlxG.switchState(new MainMenuState());
     
         FlxG.camera.scroll.y += FlxG.mouse.wheel == -1 ? 20 : (FlxG.mouse.wheel == 1 && FlxG.camera.scroll.y > 0) ? -20 : 0;
+    }
+
+    if (FlxG.keys.justPressed.DELETE && FlxG.keys.justPressed.BACKSPACE)
+    {
+        FlxG.save.data.passedSongs = [];
+        FlxG.save.data.unlockedSongs = [];
+
+        FlxG.save.flush();
+
+        trace("save resetado!");
     }
 
     FlxG.mouse.visible = false;

@@ -4,6 +4,7 @@
         {
             "name": "Gemaplay",
             "title": "Me inseri dentro do mundo do FNF (de novo)",
+            "canal": "Gemaplys",
             "views": 69,
             "time": [1, "hora"],
             "capa": 1
@@ -11,6 +12,7 @@
         {
             "name": "4Ever",
             "title": "A ascensão do Yun Li - 4Ever Gemafunk",
+            "canal": "Yung Lixo",
             "views": 32,
             "time": [3, "meses"],
             "capa": 2
@@ -18,6 +20,7 @@
         {
             "name": "Silicat",
             "title": "A torre de 100 andares - Silicat Gemafunk",
+            "canal": "Gemaplys",
             "views": 12,
             "time": [5, "meses"],
             "capa": 3
@@ -25,9 +28,18 @@
         {
             "name": "Tibba",
             "title": "Tipo o lanterna verde, mas o verde é da maconha - Tibba",
+            "canal": "Tibba",
             "views": 4,
             "time": [20, "horas"],
             "capa": 4
+        },
+        {
+            "name": "Ghosttap",
+            "title": "Fiz um jogo de terror fake mas morri no final - Ghosttap",
+            "canal": "Gemaplys",
+            "views": 100,
+            "time": [4, "anos"],
+            "capa": 5
         }
     ]
 }
