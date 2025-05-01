@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Gwerbyzugbb.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="eldI0000" x="2146" y="1255" width="477" height="649" frameX="-450" frameY="-407" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="eldI0001" x="1669" y="0" width="477" height="825" frameX="-450" frameY="-165" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="eldI0002" x="1669" y="825" width="477" height="205" frameX="-570" frameY="-974" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="eldI0003" x="0" y="1050" width="968" height="392" frameX="-192" frameY="-759" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="eldI0004" x="0" y="1442" width="606" height="606" frameX="-407" frameY="-450" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="thgiR0000" x="2146" y="649" width="563" height="606" frameX="-493" frameY="-450" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="thgiR0001" x="0" y="0" width="520" height="1050" frameX="-493" frameY="-102" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="tfeL0000" x="2146" y="0" width="563" height="649" frameX="-364" frameY="-407" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="tfeL0001" x="997" y="0" width="672" height="649" frameX="-360" frameY="-407" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="nwoD0000" x="997" y="649" width="606" height="224" frameX="-356" frameY="-973" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="nwoD0001" x="520" y="0" width="477" height="989" frameX="-450" frameY="-67" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="pU0000" x="2709" y="0" width="434" height="692" frameX="-450" frameY="-322" frameWidth="1378" frameHeight="1378"/>
+	<SubTexture name="pU0001" x="0" y="2048" width="477" height="649" frameX="-450" frameY="-322" frameWidth="1378" frameHeight="1378"/>
+</TextureAtlas>
