@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="wumpu bf.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="wdown0000" x="10" y="10" width="503" height="502" frameX="0" frameY="-44" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0001" x="10" y="10" width="503" height="502" frameX="0" frameY="-44" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0002" x="523" y="10" width="501" height="520" frameX="-6" frameY="-23" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0003" x="523" y="10" width="501" height="520" frameX="-6" frameY="-23" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0004" x="1034" y="10" width="502" height="529" frameX="-18" frameY="-12" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0005" x="1034" y="10" width="502" height="529" frameX="-18" frameY="-12" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0006" x="1546" y="10" width="503" height="539" frameX="-24" frameY="-2" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0007" x="1546" y="10" width="503" height="539" frameX="-24" frameY="-2" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0008" x="2059" y="10" width="503" height="540" frameX="-23" frameY="0" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="wdown0009" x="2059" y="10" width="503" height="540" frameX="-23" frameY="0" frameWidth="527" frameHeight="546"/>
+	<SubTexture name="widle0000" x="2572" y="10" width="507" height="565" frameX="0" frameY="-7" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0001" x="2572" y="10" width="507" height="565" frameX="0" frameY="-7" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0002" x="3089" y="10" width="517" height="555" frameX="0" frameY="-16" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0003" x="3089" y="10" width="517" height="555" frameX="0" frameY="-16" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0004" x="10" y="585" width="517" height="552" frameX="-14" frameY="-19" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0005" x="10" y="585" width="517" height="552" frameX="-14" frameY="-19" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0006" x="537" y="585" width="514" height="568" frameX="-21" frameY="-3" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0007" x="537" y="585" width="514" height="568" frameX="-21" frameY="-3" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0008" x="1061" y="585" width="514" height="571" frameX="-23" frameY="0" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0009" x="1061" y="585" width="514" height="571" frameX="-23" frameY="0" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0010" x="1585" y="585" width="514" height="571" frameX="-23" frameY="0" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="widle0011" x="1585" y="585" width="514" height="571" frameX="-23" frameY="0" frameWidth="537" frameHeight="572"/>
+	<SubTexture name="wleft0000" x="2109" y="585" width="497" height="567" frameX="0" frameY="-4" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0001" x="2109" y="585" width="497" height="567" frameX="0" frameY="-4" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0002" x="2616" y="585" width="496" height="562" frameX="-19" frameY="-9" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0003" x="2616" y="585" width="496" height="562" frameX="-19" frameY="-9" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0004" x="3122" y="585" width="508" height="568" frameX="-30" frameY="-3" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0005" x="3122" y="585" width="508" height="568" frameX="-30" frameY="-3" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0006" x="10" y="1166" width="507" height="571" frameX="-35" frameY="0" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0007" x="527" y="1166" width="507" height="571" frameX="-35" frameY="0" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0008" x="1044" y="1166" width="508" height="571" frameX="-34" frameY="0" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wleft0009" x="1044" y="1166" width="508" height="571" frameX="-34" frameY="0" frameWidth="542" frameHeight="571"/>
+	<SubTexture name="wright0000" x="1562" y="1166" width="505" height="571" frameX="-68" frameY="0" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0001" x="1562" y="1166" width="505" height="571" frameX="-68" frameY="0" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0002" x="2077" y="1166" width="507" height="568" frameX="-41" frameY="-4" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0003" x="2077" y="1166" width="507" height="568" frameX="-41" frameY="-4" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0004" x="2594" y="1166" width="507" height="568" frameX="-12" frameY="-4" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0005" x="2594" y="1166" width="507" height="568" frameX="-12" frameY="-4" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0006" x="3111" y="1166" width="506" height="570" frameX="-4" frameY="-2" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0007" x="3111" y="1166" width="506" height="570" frameX="-4" frameY="-2" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0008" x="10" y="1747" width="507" height="570" frameX="0" frameY="-2" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wright0009" x="10" y="1747" width="507" height="570" frameX="0" frameY="-2" frameWidth="573" frameHeight="572"/>
+	<SubTexture name="wup0000" x="527" y="1747" width="500" height="660" frameX="-3" frameY="0" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0001" x="527" y="1747" width="500" height="660" frameX="-3" frameY="0" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0002" x="1037" y="1747" width="505" height="653" frameX="0" frameY="-7" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0003" x="1037" y="1747" width="505" height="653" frameX="0" frameY="-7" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0004" x="1552" y="1747" width="504" height="630" frameX="-2" frameY="-30" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0005" x="1552" y="1747" width="504" height="630" frameX="-2" frameY="-30" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0006" x="2066" y="1747" width="505" height="617" frameX="-5" frameY="-43" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0007" x="2066" y="1747" width="505" height="617" frameX="-5" frameY="-43" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0008" x="2581" y="1747" width="505" height="619" frameX="-7" frameY="-41" frameWidth="512" frameHeight="660"/>
+	<SubTexture name="wup0009" x="2581" y="1747" width="505" height="619" frameX="-7" frameY="-41" frameWidth="512" frameHeight="660"/>
+</TextureAtlas>

@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character y="100" camx="400" sprite="Camisinha" scale="0.7" icon="camisinha" color="#AE66CE" holdTime="6.1">
+	<anim name="idle" anim="Idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="Up" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Left" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Right" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Down" x="0" y="0" fps="24" loop="false"/>
+	<anim name="wave" anim="Wave" x="0" y="0" fps="24" loop="false"/>
+	<anim name="bobespona" anim="Spongebob" x="-559" y="-625" fps="24" loop="false"/>
+</character>
