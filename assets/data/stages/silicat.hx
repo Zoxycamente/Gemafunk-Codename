@@ -25,7 +25,7 @@ function create()
 
     FlxG.camera.addShader(colorShader);
     //colorShader.hue = 150;
-    colorShader.saturation = -100;
+    //colorShader.saturation = -100;
     colorShader.contrast = 20;
 }
 
@@ -35,7 +35,7 @@ var hues = [100, 60, 80, -20, -50, 0];
 
 function beatHit(b)
 {
-    if (b % 4 == 0)
+    if (b % 4 == 0 && b > 1 )
     {
         trace("new color!");
 

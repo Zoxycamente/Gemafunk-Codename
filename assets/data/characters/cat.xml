@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="-130" y="10" camx="-120" camy="75" sprite="thousandFloors/sewer-cat" icon="gf" color="#A5004D">
+<character x="-130" y="10" camx="-120" camy="75" sprite="thousandFloors/sewer-cat" icon="silicat" color="#eb6b6f">
 	<anim name="idle" anim="Idle" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singUP" anim="Up" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singLEFT" anim="Left" x="0" y="0" fps="12" loop="false"/>
