@@ -35,6 +35,7 @@ function postCreate()
 
     imagem = new FunkinSprite(0,200, Paths.image("stages/feiodocaralho"));
     imagem.antialiasing = true;
+    imagem.scale.set(2, 2);
 
 }
 
@@ -72,14 +73,15 @@ function beatHit(curBeat)
         case 202:
             FlxTween.tween(dad.scale, {y: 6}, 6, {ease: FlxEase.backinOut});
         case 284:
-            for (elements in [dad, boyfriend, bg]) 
+            for (elements in [dad, boyfriend, bg, chat]) 
                 {
                     remove(elements);
                 }
+            camHUD.alpha = 0;
             add(imagem);
         case 288:
+            camGame.flash(FlxColor.BLACK, 50);
             remove(imagem);
-            camHUD.alpha = 0;
     }
 }
 

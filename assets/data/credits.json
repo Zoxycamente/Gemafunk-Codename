@@ -9,7 +9,7 @@
         },
         {
             "name": "Gabriel",
-            "function": "Co-Diretor / Chromatic maker",
+            "function": "Diretor / Chromatic maker / se mata gabriel seu coco seco",
             "image": "gaybriel",
             "scale": 0.7
         },
@@ -74,6 +74,12 @@
             "scale": 1
         },
         {
+            "name": "Caio Dramos",
+            "function": "Artista",
+            "image": "caio",
+            "scale": 0.8
+        },
+        {
             "name": "Nipo",
             "function": "Artista / Animador",
             "image": "nipo",
@@ -89,6 +95,12 @@
             "name": "Oliver",
             "function": "Artista / Austitsta / Animador / Homossexual",
             "image": "naosei",
+            "scale": 0.8
+        },
+        {
+            "name": "DGL",
+            "function": "Artista / Animador",
+            "image": "dgl",
             "scale": 0.8
         },
         {
@@ -113,7 +125,7 @@
             "name": "Dort",
             "function": "Compositor",
             "image": "dort",
-            "scale": 1.1
+            "scale": 1.4
         },
         {
             "name": "Lopez",
@@ -142,14 +154,14 @@
         {
             "name": "Boboa",
             "function": "Programadora",
-            "image": "placeholder",
-            "scale": 3
+            "image": "boboa",
+            "scale": 0.8
         },
         {
             "name": "Zoxy",
             "function": "Programadora / se mata fita.",
-            "image": "placeholder",
-            "scale": 3 
+            "image": "zoxy",
+            "scale": 0.9
         }
     ]
 }

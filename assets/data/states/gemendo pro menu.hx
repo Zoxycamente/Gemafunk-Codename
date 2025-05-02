@@ -25,7 +25,8 @@ FlxG.mouse.visible = false;
 
 function create() {
     Conductor.changeBPM(115);
-    CoolUtil.playMenuSong();
+    if (FlxG.sound.music != null) FlxG.sound.music.stop();
+    FlxG.sound.playMusic(Paths.music("freakyMenu"), 0, true);
 
     FlxG.cameras.add(camMouse, false);
     camMouse.bgColor = 0x0;
