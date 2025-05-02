@@ -24,6 +24,15 @@ function create()
     gay = FlxG.random.int(0, json.people.length - 1);
     
     createChar(0);
+
+    add(setalado = new FunkinSprite(930,250, Paths.image(dir + "setalinda")));
+    add(setaoutrolado = new FunkinSprite(100,250, Paths.image(dir + "setalinda"))).flipX = true;
+    for (setas in [setalado, setaoutrolado])
+        {
+            setas.scale.set(0.6, 0.6);
+        }
+    
+    add(esc = new FunkinSprite(-30,10, Paths.image(dir + "esc"))).scale.set(0.3, 0.3);
 }
 
 var gay:Int = false;

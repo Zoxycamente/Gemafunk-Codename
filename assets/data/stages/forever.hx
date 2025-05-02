@@ -46,7 +46,7 @@ function stepHit(curStep) {
             FlxTween.cancelTweensOf(zoomTween);
             FlxTween.cancelTweensOf(hudTween);
             buceta();
-            camHUD.flash(FlxColor.BLACK, 40);
+            camHUD.flash(FlxColor.BLACK, 20);
         case 1581:
             FlxTween.tween(camGame, {zoom: 1.2}, 22, {ease: FlxEase.backinOut});
         case 1665:

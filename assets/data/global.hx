@@ -9,7 +9,8 @@ public static var windowName:String = 'GemaFunk';
 
 WindowUtils.winTitle = windowName;
 
-function postStateSwitch(){
+function postStateSwitch()
+{
     if(!Std.isOfType(FlxG.state, PlayState))
         WindowUtils.winTitle = windowName;
 
@@ -17,12 +18,14 @@ function postStateSwitch(){
 
 function update(elapsed:Float) if (FlxG.keys.justPressed.F5) FlxG.resetState();
 
-var redirectStates:Map<FlxState, String> = [
+var redirectStates:Map<FlxState, String> = 
+[
     MainMenuState    => "gemendo pro menu",
     FreeplayState    => "GemaFunkFreeplay",
 ];
 
-static function updateFNFcounter(toggle:Bool) {
+static function updateFNFcounter(toggle:Bool) 
+{
     var daFont = toggle ? Paths.getFontName(Paths.font("Comic Sans MS.ttf")) : Paths.getFontName(Paths.font("vcr.ttf"));
     var format = new TextFormat(daFont, 13, -1);
 
@@ -38,7 +41,8 @@ function update()
     if (FlxG.keys.justPressed.F5) FlxG.resetState();
 }
 
-function preStateSwitch() {
+function preStateSwitch() 
+{
     updateFNFcounter(true);
     WindowUtils.winTitle = windowName;
     Framerate.codenameBuildField.text = windowName;

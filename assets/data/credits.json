@@ -14,9 +14,27 @@
             "scale": 1.1
         },
         {
-            "name": "Novais",
-            "function": "Animador / Autista",
-            "image": "novais",
+            "name": "Nakimy",
+            "function": "Co-Diretor / Artista",
+            "image": "mikki",
+            "scale": 0.8
+        },
+        {
+            "name": "Offe",
+            "function": "Artista / Animador",
+            "image": "offe",
+            "scale": 0.9
+        },
+        {
+            "name": "Tx",
+            "function": "Artista",
+            "image": "tx",
+            "scale": 1
+        },
+        {
+            "name": "Oliver",
+            "function": "Artista / Austitsta / Animador / Homossexual",
+            "image": "naosei",
             "scale": 0.8
         },
         {
@@ -24,6 +42,30 @@
             "function": "Animador",
             "image": "kuppy",
             "scale": 1.2
+        },
+        {
+            "name": "Novais",
+            "function": "Animador / Autista",
+            "image": "novais",
+            "scale": 0.8
+        },
+        {
+            "name": "Lopez",
+            "function": "Compositor",
+            "image": "lopez",
+            "scale": 0.8
+        },
+        {
+            "name": "Start",
+            "function": "Compositor",
+            "image": "start",
+            "scale": 1.1
+        },
+        {
+            "name": "Nait",
+            "function": "Charter",
+            "image": "nait",
+            "scale": 1.1
         },
         {
             "name": "Boboa",
