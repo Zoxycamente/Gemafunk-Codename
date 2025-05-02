@@ -8,6 +8,12 @@
             "scale": 1.1
         },
         {
+            "name": "Gabriel",
+            "function": "Co-Diretor / Chromatic maker",
+            "image": "gaybriel",
+            "scale": 0.7
+        },
+        {
             "name": "Willzey",
             "function": "Co-Diretor / Programador",
             "image": "will",
@@ -16,19 +22,67 @@
         {
             "name": "Nakimy",
             "function": "Co-Diretor / Artista",
+            "image": "Nakimy",
+            "scale": 1.1
+        },
+        {
+            "name": "Mikki",
+            "function": "Artista / não é nakimy",
             "image": "mikki",
             "scale": 0.8
         },
         {
             "name": "Offe",
-            "function": "Artista / Animador",
+            "function": "Artista / Animador / Maior sigma do mod",
             "image": "offe",
             "scale": 0.9
         },
         {
             "name": "Tx",
-            "function": "Artista",
+            "function": "Artista / Muito gay. Tipo, sério mesmo.",
             "image": "tx",
+            "scale": 1
+        },
+        {
+            "name": "Jinx",
+            "function": "Artista",
+            "image": "Sleekshot_2025-03-03_18-17-18",
+            "scale": 1
+        },
+        {
+            "name": "Filipe404",
+            "function": "Artista / cherry lover",
+            "image": "fip",
+            "scale": 0.7
+        },
+        {
+            "name": "Cherry",
+            "function": "Artista",
+            "image": "cherry",
+            "scale": 1
+        },
+        {
+            "name": "Fudido",
+            "function": "Artista",
+            "image": "fudido",
+            "scale": 0.7
+        },
+        {
+            "name": "LDx",
+            "function": "Artista",
+            "image": "ldx",
+            "scale": 1
+        },
+        {
+            "name": "Nipo",
+            "function": "Artista / Animador",
+            "image": "nipo",
+            "scale": 0.9
+        },
+        {
+            "name": "Marti",
+            "function": "Artista / Animador",
+            "image": "martifudid",
             "scale": 1
         },
         {
@@ -44,10 +98,22 @@
             "scale": 1.2
         },
         {
+            "name": "Winther",
+            "function": "Animador",
+            "image": "witer",
+            "scale": 0.7
+        },
+        {
             "name": "Novais",
             "function": "Animador / Autista",
             "image": "novais",
             "scale": 0.8
+        },
+        {
+            "name": "Dort",
+            "function": "Compositor",
+            "image": "dort",
+            "scale": 1.1
         },
         {
             "name": "Lopez",
@@ -60,6 +126,12 @@
             "function": "Compositor",
             "image": "start",
             "scale": 1.1
+        },
+        {
+            "name": "Kami",
+            "function": "Compositor",
+            "image": "kamo",
+            "scale": 0.8
         },
         {
             "name": "Nait",
@@ -75,7 +147,7 @@
         },
         {
             "name": "Zoxy",
-            "function": "Programadora",
+            "function": "Programadora / se mata fita.",
             "image": "placeholder",
             "scale": 3 
         }
