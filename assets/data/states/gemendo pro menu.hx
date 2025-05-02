@@ -24,6 +24,7 @@ FlxG.mouse.enabled = true;
 FlxG.mouse.visible = false;
 
 function create() {
+    Conductor.changeBPM(115);
     CoolUtil.playMenuSong();
 
     FlxG.cameras.add(camMouse, false);

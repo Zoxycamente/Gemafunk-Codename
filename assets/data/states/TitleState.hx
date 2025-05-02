@@ -4,6 +4,8 @@ import flixel.text.FlxTextBorderStyle;
 var pressedEnterBool:Bool = false;
 
 function create() {
+    Conductor.changeBPM(115);
+
     logo = new FunkinSprite(340, 100, Paths.image('menus/titlescreen/fita da o botao dele pra homens peludos'));
     logo.addAnim('bop', 'bop', 24, false);
     logo.scale.set(0.8, 0.8);
