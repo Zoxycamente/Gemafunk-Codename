@@ -1,5 +1,6 @@
 var mouse, ytBar, discord:FunkinSprite;
 var uiCam:FlxCamera = new FlxCamera();
+var camMouse:FlxCamera = new FlxCamera();
 
 var songsJson = CoolUtil.parseJson(Paths.json("freeplayVideos"));
 var songs = songsJson.videos;
@@ -15,6 +16,9 @@ function create()
     FlxG.camera.bgColor = 0xFF141315;
     FlxG.cameras.add(uiCam, false);
     uiCam.bgColor = 0x0;
+
+    FlxG.cameras.add(camMouse, false);
+    camMouse.bgColor = 0x0;
 
     var barraDoMal = new FlxSprite(0, 0).makeGraphic(FlxG.width, 130, 0xFF141315);
     var barra = new FunkinSprite(26, 50, Paths.image(dir + "Barras2"));
@@ -65,6 +69,8 @@ function create()
     mouse.animation.addByPrefix("idle", "Idle");
     mouse.animation.addByPrefix("click", "Click", 24, false);
     mouse.playAnim("idle");
+
+    mouse.camera = camMouse;
 
     mouse.scrollFactor.set();
     add(mouse);
@@ -259,7 +265,7 @@ function update(e)
         FlxG.camera.scroll.y += FlxG.mouse.wheel == -1 ? 20 : (FlxG.mouse.wheel == 1 && FlxG.camera.scroll.y > 0) ? -20 : 0;
     }
 
-    if (FlxG.keys.justPressed.DELETE && FlxG.keys.justPressed.BACKSPACE)
+    if (FlxG.keys.justPressed.DELETE)
     {
         FlxG.save.data.passedSongs = [];
         FlxG.save.data.unlockedSongs = [];
