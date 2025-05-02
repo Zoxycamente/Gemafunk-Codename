@@ -1,0 +1,41 @@
+{
+    "people":
+    [
+        {
+            "name": "FitaD",
+            "function": "Diretor / Charter",
+            "image": "fita",
+            "scale": 1.1
+        },
+        {
+            "name": "Willzey",
+            "function": "Co-Diretor / Programador",
+            "image": "will",
+            "scale": 1.1
+        },
+        {
+            "name": "Novais",
+            "function": "Animador / Autista",
+            "image": "novais",
+            "scale": 0.8
+        },
+        {
+            "name": "Kzuppy",
+            "function": "Animador",
+            "image": "kuppy",
+            "scale": 1.2
+        },
+        {
+            "name": "Boboa",
+            "function": "Programadora",
+            "image": "placeholder",
+            "scale": 3
+        },
+        {
+            "name": "Zoxy",
+            "function": "Programador",
+            "image": "placeholder",
+            "scale": 3 
+        }
+    ]
+}

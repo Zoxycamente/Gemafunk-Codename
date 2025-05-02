@@ -132,7 +132,7 @@ function selectItem() {
            case 'tracks': 
                 FlxG.switchState(new FreeplayState());
            case 'credits': 
-                FlxG.switchState(new CreditsMain());
+                FlxG.switchState(new ModState("GemaFunkCredits"));
            case 'options': 
                 FlxG.switchState(new OptionsMenu());
            case 'gallery': 
