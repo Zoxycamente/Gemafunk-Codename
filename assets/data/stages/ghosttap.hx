@@ -1,11 +1,14 @@
 var chatHud = new FlxCamera();
 
-function create() {
+function create() 
+{
    FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
 
-	defaultCamZoom = 1;
+	defaultCamZoom = 0.8;
 }
-function postCreate() {
+
+function postCreate() 
+{
     trace(boyfriend.x, boyfriend.y, dad.x, dad.y);
     camGame.alpha = 0;
 
@@ -29,10 +32,16 @@ function postCreate() {
     chat.antialiasing = true;
     chat.scale.set(0.3, 0.3);
     add(chat);
+
+    imagem = new FunkinSprite(0,200, Paths.image("stages/feiodocaralho"));
+    imagem.antialiasing = true;
+
 }
 
-function beatHit(curBeat) {
-    switch(curBeat) {
+function beatHit(curBeat) 
+{
+    switch(curBeat) 
+    {
         case 4:
             camGame.alpha = 1;
         case 68:
@@ -62,7 +71,15 @@ function beatHit(curBeat) {
             remove(us);
         case 202:
             FlxTween.tween(dad.scale, {y: 6}, 6, {ease: FlxEase.backinOut});
-
+        case 284:
+            for (elements in [dad, boyfriend, bg]) 
+                {
+                    remove(elements);
+                }
+            add(imagem);
+        case 288:
+            remove(imagem);
+            camHUD.alpha = 0;
     }
 }
 

@@ -13,16 +13,22 @@ var optionShit:Array<String> = ["storymode", "tracks", "credits", "options", "ga
 
 var menuItems:FlxTypedGroup<FlxSprite>;
 var curSelected:Int = 0;
-var selectedSomethin:Bool = false;
+var canSelect:Bool = false;
 var canSelectOptions:Bool = false;
 public var canAccessDebugMenus:Bool = true;
+var camMouse:FlxCamera = new FlxCamera();
+var mouse:FunkinSprite;
 
 FlxG.mouseControls = true;
 FlxG.mouse.enabled = true;
-FlxG.mouse.visible = true;
+FlxG.mouse.visible = false;
 
 function create() {
     CoolUtil.playMenuSong();
+
+    FlxG.cameras.add(camMouse, false);
+    camMouse.bgColor = 0x0;
+
 
    // FlxG.camera.zoom = 0.3;
     bg = new FlxBackdrop(Paths.image('menus/mainmenu/fundo'));
@@ -75,7 +81,15 @@ function create() {
     menuItems.members[4].y = 500;
 
     changeItem();
-//-480 -20
+
+    mouse = new FunkinSprite(0, 0);
+    mouse.frames = Paths.getSparrowAtlas("menus/freeplay/Mouse");
+    mouse.animation.addByPrefix("idle", "Idle");
+    mouse.animation.addByPrefix("click", "Click", 24, false);
+    mouse.playAnim("idle");
+    mouse.camera = camMouse;
+    mouse.scrollFactor.set();
+    add(mouse);
 }
 
 
@@ -88,7 +102,17 @@ function update(elapsed:Float) {
     if (FlxG.sound.music.volume < 0.8) FlxG.sound.music.volume += 0.5 * elapsed;
 
 
-	if (!selectedSomethin) {
+	if (!canSelect) {
+        if (mouse.getAnimName() == "click")
+            {
+                mouse.x = FlxG.mouse.screenX - 10;
+                mouse.y = FlxG.mouse.screenY - 8;
+            }
+            else 
+            {
+                mouse.x = FlxG.mouse.screenX;
+                mouse.y = FlxG.mouse.screenY;
+            }
         if (canAccessDebugMenus) {
             if (FlxG.keys.justPressed.SEVEN) {
                 persistentUpdate = false;
@@ -113,7 +137,8 @@ function update(elapsed:Float) {
 }
 
 function selectItem() {
-    selectedSomethin = true;
+    mouse.playAnim("click", true);
+    canSelect = true;
 
 	FlxG.sound.play(Paths.sound('menu/confirm'));
     FlxTween.tween(FlxG.camera, {zoom: 1.1}, 2, {ease: FlxEase.expoOut});
@@ -125,21 +150,21 @@ function selectItem() {
         var event = event("onSelectItem", EventManager.get(NameEvent).recycle(daChoice));
         if (event.cancelled) return;
         switch (daChoice)   {
-           case 'storymode': 
-                openSubState(new ModSubState("substate irado"));
-                selectedSomethin = persistentUpdate = false;
-                persistentDraw = true;
-           case 'tracks': 
-                FlxG.switchState(new FreeplayState());
-           case 'credits': 
-                FlxG.switchState(new ModState("GemaFunkCredits"));
-           case 'options': 
-                FlxG.switchState(new OptionsMenu());
-           case 'gallery': 
-                openSubState(new ModSubState("substate irado"));
-                selectedSomethin = persistentUpdate = false;
-                persistentDraw = true;
-    }});
+            case 'storymode': 
+                 openSubState(new ModSubState("substate irado"));
+                 canSelect = persistentUpdate = false;
+                 persistentDraw = true;
+            case 'tracks': 
+                 FlxG.switchState(new FreeplayState());
+            case 'credits': 
+                 FlxG.switchState(new ModState("GemaFunkCredits"));
+            case 'options': 
+                 FlxG.switchState(new OptionsMenu());
+            case 'gallery': 
+                 openSubState(new ModSubState("substate irado"));
+                 canSelect = persistentUpdate = false;
+                 persistentDraw = true;
+     }});
 }
 
 public function changeItem(huh:Int = 0) {

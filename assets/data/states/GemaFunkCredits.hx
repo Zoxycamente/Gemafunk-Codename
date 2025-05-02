@@ -30,6 +30,9 @@ var gay:Int = false;
 
 function update()
 {
+    if (controls.BACK)
+        FlxG.switchState(new MainMenuState());
+    
     if (controls.LEFT_P) updateCurChar(-1);
     if (controls.RIGHT_P) updateCurChar(1);
 }

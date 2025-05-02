@@ -1,8 +1,13 @@
 import funkin.backend.utils.WindowUtils;
 
-function postCreate() {
-    WindowUtils.winTitle = windowName + ' | ' + PlayState.SONG.meta.displayName;
+function create() 
+{
+    playCutscenes = true;
+}
 
+function postCreate() 
+{
+    WindowUtils.winTitle = windowName + ' | ' + PlayState.SONG.meta.displayName;
 }
 
 function update()

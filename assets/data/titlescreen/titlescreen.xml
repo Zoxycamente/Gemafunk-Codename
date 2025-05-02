@@ -3,18 +3,12 @@
 
 	<intro length="16">
 		<text beat="1">
-			<line text="ninjamuffin99" />
-			<line text="phantomArcade" />
-			<line text="kawaisprite" />
-			<line text="evilsk8er" />
+			<line text="GEMAFUNK TEAM" />
 		</text>
 
 		<text beat="3">
-			<line text="ninjamuffin99" />
-			<line text="phantomArcade" />
-			<line text="kawaisprite" />
-			<line text="evilsk8er" />
-			<line text="presents" />
+			<line text="GEMAFUNK TEAM" />
+			<line text="APRESENTA" />
 		</text>
 
 		<text beat="4" /> <!-- clears the screen !-->
