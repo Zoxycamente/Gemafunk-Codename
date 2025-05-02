@@ -21,9 +21,12 @@ function create()
     add(bg);
 
     bg.antialiasing = false;
-
+    gay = FlxG.random.int(0, json.people.length - 1);
+    
     createChar(0);
 }
+
+var gay:Int = false;
 
 function update()
 {
@@ -76,6 +79,7 @@ function createChar(uau)
     add(desc);
 
     desc.text = json.people[uau].function;
+    if (uau == gay) desc.text += " / GAY"; //essencial
     desc.screenCenter();
     desc.y += 250;
 }
