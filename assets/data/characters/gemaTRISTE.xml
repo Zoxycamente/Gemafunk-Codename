@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="100" sprite="Vitor4Depressivo" scale="1.1" icon="lixo" color="#AF66CE" holdTime="6.1">
+<character y="100" sprite="Vitor4Depressivo" scale="1.1" icon="lixo" color="#FF7300" holdTime="6.1">
 	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singUP" anim="up" x="36" y="43" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="left" x="59" y="-6" fps="24" loop="false"/>

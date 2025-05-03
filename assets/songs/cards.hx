@@ -26,6 +26,16 @@ function create()
             cards.scale.set(0.7,0.7);
             cards.y = 130;
             xValue = -130;
+        case "ghosttap":
+            cards.scale.set(0.7,0.7);
+            cards.y = 130;
+            xValue = -130;
+        case "silicat":
+            cards.scale.set(1.5,1.5);
+        case "tibba":
+            cards.scale.set(0.5, 0.5);
+            cards.y = -100;
+            xValue = -130;
     }
 }
 
@@ -42,6 +52,15 @@ function stepHit(curStep)
         case "4ever":
             if (curStep == 114) cardShit("entra");
             if (curStep == 134) cardShit("sai");
+        case "ghosttap":
+            if (curStep == 320) cardShit("entra");
+            if (curStep == 344) cardShit("sai");
+        case "silicat":
+            if (curStep == 292) cardShit("entra");
+            if (curStep == 320) cardShit("sai");
+        case "tibba":
+            if (curStep == 130) cardShit("entra");
+            if (curStep == 160) cardShit("sai");
     }
 }
 
@@ -55,7 +74,7 @@ function cardShit(piupiu:String)
             FlxTween.tween(cards, {x: xValue}, 1, {ease: FlxEase.smootherStepOut});
         case "sai":
             trace("saiu");
-            FlxTween.tween(cards, {x: cards.x-800}, 1, {ease: FlxEase.backIn}, function() {
+            FlxTween.tween(cards, {x: cards.x-800}, 1, {ease: FlxEase.quadIn}, function() {
                 destroy(cards);
             });
     }

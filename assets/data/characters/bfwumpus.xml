@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="200" sprite="wumpu bf" flipX="true" isPlayer="true" icon="bfwumpus" color="#30B0D1" gameOverChar="bfwumpus-dead">
+<character y="200" sprite="wumpu bf" flipX="true" isPlayer="true" icon="bfwumpus" color="#00A5FF" gameOverChar="bfwumpus-dead">
 	<anim name="idle" anim="widle" x="-5" y="0" fps="24" loop="true"/>
 	<anim name="singUP" anim="wup" x="-29" y="88" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="wleft" x="26" y="-1" fps="24" loop="false"/>

@@ -2,13 +2,14 @@ var chatHud = new FlxCamera();
 
 function create() 
 {
-   FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
+    FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
 
 	defaultCamZoom = 0.8;
 }
 
 function postCreate() 
 {
+
     trace(boyfriend.x, boyfriend.y, dad.x, dad.y);
     camGame.alpha = 0;
 
@@ -85,4 +86,8 @@ function beatHit(curBeat)
     }
 }
 
-function update() chatHud.alpha = camGame.alpha;
+function update()
+{
+    chatHud.alpha = camGame.alpha;
+    iconHUD.alpha = camHUD.alpha;
+}
