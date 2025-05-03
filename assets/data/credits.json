@@ -122,6 +122,12 @@
             "scale": 0.8
         },
         {
+            "name": "Amora",
+            "function": "bg artist",
+            "image": "amora",
+            "scale": 0.8
+        },
+        {
             "name": "Kzuppy",
             "function": "Animador",
             "image": "kuppy",
@@ -144,12 +150,6 @@
             "function": "Compositor",
             "image": "nicolas",
             "scale": 1.1
-        },
-        {
-            "name": "LDx",
-            "function": "Artista",
-            "image": "ldx",
-            "scale": 1
         },
         {
             "name": "Lopez",

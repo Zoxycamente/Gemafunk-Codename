@@ -23,9 +23,9 @@ function create()
             cards.scale.set(1.5,1.5);
             xValue = 40;
         case "4ever":
-            cards.scale.set(0.7,0.7);
+            cards.scale.set(0.5,0.5);
             cards.y = 130;
-            xValue = -130;
+            xValue = -180;
         case "ghosttap":
             cards.scale.set(0.7,0.7);
             cards.y = 130;
@@ -33,9 +33,9 @@ function create()
         case "silicat":
             cards.scale.set(1.5,1.5);
         case "tibba":
-            cards.scale.set(0.5, 0.5);
+            cards.scale.set(0.4, 0.4);
             cards.y = -100;
-            xValue = -130;
+            xValue = -180;
     }
 }
 

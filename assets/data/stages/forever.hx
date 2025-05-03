@@ -9,7 +9,11 @@ public static var vito2:Character;
 var colorShader = new CustomShader("adjustColor");
 
 function create() {
-    camGame.alpha = camHUD.alpha = 0;
+    blackbg = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 1), Std.int(FlxG.height * 1), FlxColor.BLACK);
+	blackbg.scale.set(5, 5);
+    add(blackbg);
+
+    camHUD.alpha = 0;
 	defaultCamZoom = 0.7;
 }
 function postCreate() {
@@ -50,7 +54,7 @@ function postCreate() {
 function stepHit(curStep) {
     switch(curStep) {
         case 1:
-            FlxTween.tween(camGame, {alpha: 1}, 10, {ease: FlxEase.smootherStepin});
+            FlxTween.tween(blackbg, {alpha: 0}, 10, {ease: FlxEase.smootherStepin});
         case 111:
             camHUD.alpha = 1;
         case 1193:
