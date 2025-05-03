@@ -158,6 +158,12 @@
             "scale": 0.8
         },
         {
+            "name": "Guest",
+            "function": "Compositor",
+            "image": "guest",
+            "scale": 0.8
+        },
+        {
             "name": "Start",
             "function": "Compositor",
             "image": "start",

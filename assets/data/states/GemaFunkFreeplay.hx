@@ -254,7 +254,7 @@ function update(e)
 
                 new FlxTimer().start(0.5, function(t:FlxTimer) {
                     FlxG.sound.music.stop();
-                    FlxG.switchState(new PlayState());
+                    openSubState(new ModSubState("eutenhodepressao"));
                 });
             }
         }
