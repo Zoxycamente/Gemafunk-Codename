@@ -32,10 +32,22 @@
             "scale": 0.8
         },
         {
+            "name": "Torresmo",
+            "function": "Artista / Gostosa",
+            "image": "torrgostosa",
+            "scale": 1.1
+        },
+        {
             "name": "Offe",
             "function": "Artista / Animador / Maior sigma do mod",
             "image": "offe",
             "scale": 0.9
+        },
+        {
+            "name": "Mikey",
+            "function": "Artista / Compositor",
+            "image": "mikey",
+            "scale": 0.8
         },
         {
             "name": "Tx",
@@ -80,6 +92,12 @@
             "scale": 0.8
         },
         {
+            "name": "Cauan",
+            "function": "Artista",
+            "image": "cauan",
+            "scale": 1.1
+        },
+        {
             "name": "Nipo",
             "function": "Artista / Animador",
             "image": "nipo",
@@ -122,10 +140,16 @@
             "scale": 0.8
         },
         {
-            "name": "Dort",
+            "name": "Nicolas",
             "function": "Compositor",
-            "image": "dort",
-            "scale": 1.4
+            "image": "nicolas",
+            "scale": 1.1
+        },
+        {
+            "name": "LDx",
+            "function": "Artista",
+            "image": "ldx",
+            "scale": 1
         },
         {
             "name": "Lopez",
@@ -149,6 +173,12 @@
             "name": "Nait",
             "function": "Charter",
             "image": "nait",
+            "scale": 1.1
+        },
+        {
+            "name": "Luis",
+            "function": "Charter",
+            "image": "luis",
             "scale": 1.1
         },
         {
