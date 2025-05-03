@@ -49,15 +49,15 @@ function beatHit(curBeat) {
         case 390, 420:
             defaultCamZoom = 0.6;
         case 424:
+            FlxTween.tween(dad, {alpha: 0}, 30, {ease: FlxEase.cubeInOut});
+
             defaultCamZoom = 0.7;
             FlxTween.tween(bg, {alpha: 0.5}, 1, {ease: FlxEase.cubeInOut});
-            for (elements in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, missesTxt, accuracyTxt]) FlxTween.tween(elements, {x: strumLines.members[1].members[i].x - 2000}, 1, {ease: FlxEase.cubeInOut});
+            for (elements in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, missesTxt, accuracyTxt]) FlxTween.tween(elements, {alpha:0}, 1, {ease: FlxEase.cubeInOut});
             for(i in 0...4) 
                 {
-                    FlxTween.tween(strumLines.members[0].members[i], {alpha: 0}, 1, {ease: FlxEase.cubeInOut});
+                    FlxTween.tween(strumLines.members[0].members[i], {x: strumLines.members[1].members[i].x - 2000}, 1, {ease: FlxEase.cubeInOut});
                 }
-        case 479:
-            FlxTween.tween(camGame, {zoom: 0.1}, 1, {ease: FlxEase.cubeInOut});
         case 482:
             camGame.alpha = 0;
     }
