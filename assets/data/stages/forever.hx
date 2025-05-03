@@ -9,6 +9,7 @@ public static var vito2:Character;
 var colorShader = new CustomShader("adjustColor");
 
 function create() {
+    camGame.alpha = camHUD.alpha = 0;
 	defaultCamZoom = 0.7;
 }
 function postCreate() {
@@ -20,21 +21,38 @@ function postCreate() {
     camGame.addShader(colorShader);
     camHUD.addShader(colorShader);
 
-	bg1 = new FlxSprite(-600, -130).loadGraphic(Paths.image(path + "4everback"));
-    bg1.antialiasing = true;
-	insert(0, bg1);
+	ceu = new FunkinSprite(-600, -130,Paths.image(path + "céu"));
+    ceu.antialiasing = true;
+	ceu.scrollFactor.set(0.4,0.4);
 
-    bg2 = new FlxSprite(-970, -870).loadGraphic(Paths.image(path + "parte2"));
+    agua = new FunkinSprite(10, -90,Paths.image(path + "Asghua"));
+    agua.addAnim('idle', 'Asghua', 12, true);
+    agua.playAnim('idle');
+    agua.scrollFactor.set(0.8,0.8);
+    agua.antialiasing = true;
+
+    praia = new FunkinSprite(-600, -130,Paths.image(path + "praia"));
+    praia.antialiasing = true;
+
+    insert(0, praia);
+    insert(0, agua);
+	insert(0, ceu);
+
+    bg2 = new FunkinSprite(-970, -870,Paths.image(path + "parte2"));
 	bg2.scale.set(0.8,0.8);
     bg2.antialiasing = true;
 
-	radio = new FlxSprite(-900, -700).loadGraphic(Paths.image(path + "radio"));
+	radio = new FunkinSprite(-900, -700,Paths.image(path + "radio"));
 	radio.scale.set(0.4,0.4);
     radio.antialiasing = true;
 }
 
 function stepHit(curStep) {
     switch(curStep) {
+        case 1:
+            FlxTween.tween(camGame, {alpha: 1}, 10, {ease: FlxEase.smootherStepin});
+        case 111:
+            camHUD.alpha = 1;
         case 1193:
             for (i in [camHUD, camGame]) {
                 zoomTween = FlxTween.tween(i, {zoom: 1.2}, 6, {ease: FlxEase.backinOut});
@@ -66,7 +84,7 @@ function buceta() {
 
     add(radio);
     insert(0, bg2);
-    remove(bg1);
+    for(bgElements in [praia, agua, ceu]) remove(bgElements);
 
     vito2 = new Character(dad.x, dad.y, "gemaTRISTE", false);
     remove(dad);

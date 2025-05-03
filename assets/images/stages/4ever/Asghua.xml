@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Asghua.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Asghua0000" x="0" y="139" width="1330" height="137" frameX="2" frameY="-515" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0001" x="0" y="0" width="1330" height="139" frameX="2" frameY="-513" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0002" x="0" y="803" width="1330" height="125" frameX="2" frameY="-527" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0003" x="0" y="541" width="1330" height="131" frameX="2" frameY="-521" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0004" x="0" y="928" width="1330" height="124" frameX="2" frameY="-528" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0005" x="0" y="1171" width="1330" height="119" frameX="2" frameY="-533" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0006" x="0" y="1052" width="1330" height="119" frameX="2" frameY="-533" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0007" x="0" y="672" width="1330" height="131" frameX="2" frameY="-521" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0008" x="0" y="409" width="1330" height="132" frameX="2" frameY="-520" frameWidth="1326" frameHeight="650"/>
+	<SubTexture name="Asghua0009" x="0" y="276" width="1330" height="133" frameX="2" frameY="-519" frameWidth="1326" frameHeight="650"/>
+</TextureAtlas>

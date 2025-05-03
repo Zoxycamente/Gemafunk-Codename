@@ -1,4 +1,6 @@
 var cards:FunkinSprite;
+var xValue:String = "0";
+var yValue:String = "300";
 var cardCamera:FlxCamera = new FlxCamera();
 
 function create() 
@@ -9,10 +11,22 @@ function create()
     FlxG.cameras.add(cardCamera, false);
     cardCamera.bgColor = FlxColor.TRANSPARENT;
 
-    cards = new FunkinSprite(-400,300, Paths.image("game/cards/" + curSong));
+    cards = new FunkinSprite(-800,330, Paths.image("game/cards/" + curSong));
     cards.cameras = [cardCamera];
-    cards.scale.set(1.5,1.5);
+    cards.antialiasing = true;
+    //cards.scale.set(1.5,1.5);
     add(cards);
+
+    switch(curSong) 
+    {
+        case "gemabot": 
+            cards.scale.set(1.5,1.5);
+            xValue = 40;
+        case "4ever":
+            cards.scale.set(0.7,0.7);
+            cards.y = 130;
+            xValue = -130;
+    }
 }
 
 function stepHit(curStep) 
@@ -25,18 +39,24 @@ function stepHit(curStep)
         case "gemabot": 
             if (curStep == 16) cardShit("entra");
             if (curStep == 48) cardShit("sai");
+        case "4ever":
+            if (curStep == 114) cardShit("entra");
+            if (curStep == 134) cardShit("sai");
     }
 }
 
-function cardShit(piupiu:String) {
-    switch(piupiu) {
+function cardShit(piupiu:String) 
+{
+    switch(piupiu) 
+    {
         case "entra":
+            trace(xValue);
             trace("entrou");
-            FlxTween.tween(cards, {x: 0}, 1, {ease: FlxEase.smootherStepOut});
+            FlxTween.tween(cards, {x: xValue}, 1, {ease: FlxEase.smootherStepOut});
         case "sai":
             trace("saiu");
-            FlxTween.tween(cards, {x: cards.x-400}, 1, {ease: FlxEase.smootherStepin}, function() {
-                destroy(cardCamera);
+            FlxTween.tween(cards, {x: cards.x-800}, 1, {ease: FlxEase.backIn}, function() {
+                destroy(cards);
             });
     }
 }
