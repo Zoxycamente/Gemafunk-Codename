@@ -167,7 +167,19 @@
             "name": "Start",
             "function": "Compositor",
             "image": "start",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials":
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/StartGamer221"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/basst221_"
+                }
+            ]
         },
         {
             "name": "Kami",
