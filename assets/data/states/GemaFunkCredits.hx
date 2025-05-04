@@ -1,3 +1,5 @@
+
+import funkin.backend.utils.NativeAPI;
 var json;
 var curChar = 0;
 
@@ -96,6 +98,14 @@ function update()
             char.angle = 0;
             
             pulinhoTween = FlxTween.tween(char, {y: defCharY, angle: (FlxG.random.bool(50) == true) ? 360 : -360}, 0.8, {ease: FlxEase.quartOut});
+        }
+    }
+
+    if (json.people[curChar].name == "Zoxy")
+    {
+        if (mouse.x > char.x && mouse.x < char.x + char.width && mouse.y > char.y && mouse.y < char.y + char.height && FlxG.mouse.justPressed)
+        {
+            NativeAPI.showMessageBox("SE MATA FITA", "se mata fita");
         }
     }
 }
