@@ -128,9 +128,9 @@ function update(elapsed:Float) {
             persistentDraw = true;
         }
 
-        if (FlxG.mouse.justPressed) selectItem();
 		for (i in menuItems.members) {
 			if (FlxG.mouse.overlaps(i)) {
+                if (FlxG.mouse.justPressed) selectItem();
 				curSelected = menuItems.members.indexOf(i);
 				changeItem();
 			}

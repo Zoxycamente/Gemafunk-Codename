@@ -229,7 +229,23 @@
             "name": "Zoxy",
             "function": "Programadora / se mata fita.",
             "image": "zoxy",
-            "scale": 0.9
+            "scale": 0.9,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/peanut_cut"
+                },
+                {
+                    "type": "bluesky",
+                    "destiny": "https://bsky.app/profile/amendoincortado.bsky.social"
+                },
+                {
+                    "type": "newgrounds",
+                    "destiny": "https://ploxy12345678910.newgrounds.com/"
+                }
+            ]
         }
     ]
 }
