@@ -32,6 +32,7 @@ function create()
             xValue = -200;
         case "silicat":
             cards.scale.set(1.5,1.5);
+            cards.camera = camHUD;
         case "tibba":
             cards.scale.set(0.4, 0.4);
             cards.y = -100;

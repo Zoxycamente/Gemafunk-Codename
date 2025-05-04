@@ -7,8 +7,8 @@ public var pixelNotesForDad = true;
 public var pixelSplashes = true;
 public var enablePixelUI = true;
 public var enablePixelGameOver = true;
-public var enableCameraHacks = Options.week6PixelPerfect;
-public var enablePauseMenu = true;
+public var enableCameraHacks = false;
+public var enablePauseMenu = false;
 public var isSpooky = false;
 
 var oldStageQuality = FlxG.game.stage.quality;
@@ -63,7 +63,7 @@ function onCountdown(event) {
 
 	if (event.soundPath != null) event.soundPath = 'pixel/' + event.soundPath;
 	event.antialiasing = false;
-	event.scale = daPixelZoom;
+	event.scale = 0.8;
 	event.spritePath = switch(event.swagCounter) {
 		case 0: null;
 		case 1: 'stages/school/ui/ready';
