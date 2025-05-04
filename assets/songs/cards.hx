@@ -27,9 +27,9 @@ function create()
             cards.y = 130;
             xValue = -180;
         case "ghosttap":
-            cards.scale.set(0.7,0.7);
+            cards.scale.set(0.5,0.5);
             cards.y = 130;
-            xValue = -130;
+            xValue = -200;
         case "silicat":
             cards.scale.set(1.5,1.5);
         case "tibba":

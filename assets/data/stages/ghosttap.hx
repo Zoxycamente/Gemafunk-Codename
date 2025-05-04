@@ -89,5 +89,4 @@ function beatHit(curBeat)
 function update()
 {
     chatHud.alpha = camGame.alpha;
-    iconHUD.alpha = camHUD.alpha;
 }

@@ -3,7 +3,6 @@ function create() {
     defaultCamZoom = 0.5;
 }
 function postCreate() {
-    iconP1.flipX = true; //cara quem foi o drómedario que fez o icon do bf virado pra esquerda sendo que TODOS os icones tem que ser virados pra direita 
     remove(iconP2);
     insert(1111, iconP2);
     bg = new FunkinSprite(-300, -150, Paths.image("stages/gemabot/bg"));
@@ -60,6 +59,9 @@ function beatHit(curBeat) {
                 }
         case 482:
             camGame.alpha = 0;
+        case 484:
+            FlxG.switchState(new ModState("eutenhodepressao"));
+
     }
 }
 
