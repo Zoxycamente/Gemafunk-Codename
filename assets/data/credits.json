@@ -5,25 +5,66 @@
             "name": "FitaD",
             "function": "Diretor / Charter",
             "image": "fita",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@fita6999?si=nf8NIpahe0Uvynax"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/fittedbarley89?s=21"
+                }
+            ]
         },
         {
             "name": "Gabriel",
             "function": "Diretor / Chromatic maker / se mata gabriel seu coco seco",
             "image": "gaybriel",
-            "scale": 0.7
+            "scale": 0.7,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://www.youtube.com/@gabrieluniverso8235"
+                }
+            ]
         },
         {
             "name": "Willzey",
             "function": "Co-Diretor / Programador",
             "image": "will",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@willzey13?si=gyatWmuOwZc5uG5s"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/wilzey13lol?t=jLtO3MfvK4uVEZcZnFq0xQ&s=09"
+                }
+            ]
         },
         {
             "name": "Nakimy",
             "function": "Co-Diretor / Artista",
             "image": "Nakimy",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/Nakimy_oficial?t=NdUD6onuddrQzgLzN9yFaw&s=09"
+                }
+            ]
+
         },
         {
             "name": "Mikki",
@@ -35,67 +76,171 @@
             "name": "Torresmo",
             "function": "Artista / Gostosa",
             "image": "torrgostosa",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/Torrmate?t=IsTLLWCtmOHwQovDfWxUOA&s=09"
+                }
+            ]
         },
         {
             "name": "Offe",
             "function": "Artista / Animador / Maior sigma do mod",
             "image": "offe",
-            "scale": 0.9
+            "scale": 0.9,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/cafe_comagua?t=k6qlwZ04-G4p_TUYTg5Mtg&s=09"
+                }
+            ]
         },
         {
             "name": "Mikey",
             "function": "Artista / Compositor",
             "image": "mikey",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://www.youtube.com/@MikeAnim"
+                }
+            ]
         },
         {
             "name": "Tx",
             "function": "Artista / Muito gay. Tipo, sério mesmo.",
             "image": "tx",
-            "scale": 1
+            "scale": 1,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/tx_bobinho?t=b7em6Fgg3Me1MnoPOHEsRg&s=09"
+                }
+            ]
         },
         {
             "name": "Jinx",
             "function": "Artista",
             "image": "Sleekshot_2025-03-03_18-17-18",
-            "scale": 1
+            "scale": 1,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@jinx_129?si=Pbq32HdD_WikdH3S"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/Jinx_239?t=W11PhlZZ8ffSHUnoexDg0w&s=09"
+                }
+            ]
         },
         {
             "name": "Filipe404",
             "function": "Artista / cherry lover",
             "image": "fip",
-            "scale": 0.7
+            "scale": 0.7,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@filipe404"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://twitter.com/404Filipe?t=1PKzzC24QB3uRtlyCdUBaw&s=09"
+                }
+            ]
         },
         {
             "name": "Cherry",
             "function": "Artista",
             "image": "cherry",
-            "scale": 1
+            "scale": 1,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/itsaMecallie_?t=y4oitQKSJhcR0Ar51reIxQ&s=09"
+                }
+            ]
         },
         {
             "name": "Fudido",
             "function": "Artista",
             "image": "fudido",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@fudidokk?si=O3LrgAj-PW-lXEjO"
+                }
+            ]
         },
         {
             "name": "LDx",
             "function": "Artista",
             "image": "ldx",
-            "scale": 1
+            "scale": 1,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://www.youtube.com/@jogandodebs7508"
+                },
+                {
+                    "type": "youtube",
+                    "destiny": "https://www.youtube.com/channel/UCu5jYcujcDIX4Xaf7hmkXWw"
+                }
+            ]
         },
         {
             "name": "Caio Dramos",
             "function": "Artista",
             "image": "caio",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@caiodramos1445?si=vBLwV6D9LXw0sgj-"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/caiodramoskk?t=MqkiqcZMt8XGfI44knHckQ&s=09"
+                }
+            ]
         },
         {
             "name": "Cauan",
             "function": "Artista",
             "image": "cauan",
-            "scale": 1.3
+            "scale": 1.3,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/Cauan_Remix?t=PP_QtHV2TCpKbbNqm2-pZQ&s=09"
+                }
+            ]
         },
         {
             "name": "Nipo",
@@ -107,19 +252,60 @@
             "name": "Marti",
             "function": "Artista / Animador",
             "image": "martifudid",
-            "scale": 1
+            "scale": 1,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@marti_animated?si=OwnoYBAmbS5E1OE3"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/marti_gustan?t=MHIK5aLRxjreuDBbg60kuQ&s=09"
+                }
+            ]
         },
         {
             "name": "Oliver",
             "function": "Artista / Austitsta / Animador / Homossexual",
             "image": "naosei",
-            "scale": 0.8
+            "scale": 0.8,
+
+            
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@Bruholiverlol"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/BruhOliverLOL "
+                },
+                {
+                    "type": "newgrounds",
+                    "destiny": "https://tiohero.newgrounds.com/"
+                }
+            ]
         },
         {
             "name": "DGL",
             "function": "Artista / Animador",
             "image": "dgl",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@danielgamerdgl?si=5D_-ybLSV95tBn8l"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/DGLDaniOfc1?t=nyYT_MFp3_Vz3MF9x_vfMw&s=09"
+                }
+            ]
         },
         {
             "name": "Amora",
@@ -131,43 +317,111 @@
             "name": "Kzuppy",
             "function": "Animador",
             "image": "kuppy",
-            "scale": 1.2
+            "scale": 1.2,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/kzuupy"
+                }
+            ]
         },
         {
             "name": "Winther",
             "function": "Animador",
             "image": "witer",
-            "scale": 0.7
+            "scale": 0.7,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@lorenzolo2264?si=Ez94wR4n6jcpK_lO"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/Lor3nzolo?t=DdeldPgQBFQS3plj6pn9MA&s=09"
+                }
+            ]
         },
         {
             "name": "Novais",
             "function": "Animador / Autista",
             "image": "novais",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/Novaizes?t=FBLKj3UnrSY_l5BjELNtUQ&s=09"
+                }
+            ]
         },
         {
             "name": "Dort",
             "function": "Compositor",
             "image": "dort",
-            "scale": 1.4
+            "scale": 1.4,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@sillyakadort?si=M4KbNNoZ57RF39n6"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/SillyAkaDort?t=clwRWFrXclsmUMqFXBLiYg&s=09"
+                }
+            ]
         },
         {
             "name": "Nicolas",
             "function": "Compositor",
             "image": "nicolas",
-            "scale": 1.3
+            "scale": 1.3,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@nicklf756?si=_PJQ-yfN80xyYqFo"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/thenicklf?t=53gzfB9rXxzX0N490djWdg&s=09"
+                }
+            ]
         },
         {
             "name": "Lopez",
             "function": "Compositor",
             "image": "lopez",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@manolopez198?si=4nuQtZOU2wf8yE2z"
+                }
+            ]
         },
         {
             "name": "Guest",
             "function": "Compositor",
             "image": "guest",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/665_guest?t=kzVuW1TLS6U6p2INKG8E4Q&s=09"
+                }
+            ]
         },
         {
             "name": "Start",
@@ -177,6 +431,10 @@
 
             "socials":
             [
+                {
+                    "type": "youtube",
+                    "destiny": "https://www.youtube.com/@startdofnf221"
+                },
                 {
                     "type": "twitter",
                     "destiny": "https://x.com/StartGamer221"
@@ -191,19 +449,55 @@
             "name": "Kami",
             "function": "Compositor",
             "image": "kamo",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@kkami6?si=4Hy8YOpiO0YimTAv"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/kamizito6?s=21"
+                }
+            ]
         },
         {
             "name": "Nait",
             "function": "Charter",
             "image": "nait",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@naitstation?si=0rkKnmmthIVSz76l"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/nait_exe?t=kNM3ffMYLTbVFyMpz4klYA&s=09"
+                }
+            ]
         },
         {
-            "name": "Luis",
+            "name": "Luismindo",
             "function": "Charter",
             "image": "luis",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://www.youtube.com/@Luismindoo"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/luismindoo"
+                }
+            ]
         },
         {
             "name": "Boboa",
