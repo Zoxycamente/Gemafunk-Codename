@@ -20,7 +20,7 @@
             ]
         },
         {
-            "name": "Gabriel",
+            "name": "Gabriel (debi)",
             "function": "Diretor / Chromatic maker / se mata gabriel seu coco seco",
             "image": "gaybriel",
             "scale": 0.7,
@@ -70,7 +70,15 @@
             "name": "Mikki",
             "function": "Artista / não é nakimy",
             "image": "mikki",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/MikkiStarhigh?t=MLTc5yO0bpozhgOuvkKjBA&s=09"
+                }
+            ]
         },
         {
             "name": "Torresmo",
@@ -189,11 +197,15 @@
                 {
                     "type": "youtube",
                     "destiny": "https://youtube.com/@fudidokk?si=O3LrgAj-PW-lXEjO"
+                },
+                {
+                    "type": "tiktok",
+                    "destiny": "https://www.tiktok.com/@fudidok9?_t=ZM-8w57Lzffmnn&_r=1"
                 }
             ]
         },
         {
-            "name": "LDx",
+            "name": "Ldex (loide)",
             "function": "Artista",
             "image": "ldx",
             "scale": 1,
@@ -246,7 +258,15 @@
             "name": "Nipo",
             "function": "Artista / Animador",
             "image": "nipo",
-            "scale": 1.1
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/ponzzu69?t=L7ZAI9aM0s2ahKtfG5QjDQ&s=09"
+                }
+            ]
         },
         {
             "name": "Marti",
@@ -311,7 +331,19 @@
             "name": "Amora",
             "function": "bg artist",
             "image": "amora",
-            "scale": 0.7
+            "scale": 0.7,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://youtube.com/@puddingtdf?si=d81dVVAIip9LOVon"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/PuddingTDF?t=uLbdjRsuVqb3Qs7qVRq9Mw&s=09"
+                }
+            ]
         },
         {
             "name": "Kzuppy",
@@ -406,6 +438,10 @@
                 {
                     "type": "youtube",
                     "destiny": "https://youtube.com/@manolopez198?si=4nuQtZOU2wf8yE2z"
+                },
+                {
+                    "type": "spotify",
+                    "destiny": "https://open.spotify.com/intl-pt/artist/7yeIO87dsjtZ0g4Kt6cefg?si=WkqgHZrXQRm9hy7zh0T1BQ"
                 }
             ]
         },
