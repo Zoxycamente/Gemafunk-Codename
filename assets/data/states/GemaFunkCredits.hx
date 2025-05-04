@@ -82,7 +82,26 @@ function update()
                 CoolUtil.openURL(json.people[curChar].socials[x].destiny);
         }
     }
+
+    if (json.people[curChar].name == "Boboa")
+    {
+        if (mouse.x > char.x && mouse.x < char.x + char.width && mouse.y > char.y && mouse.y < char.y + char.height && FlxG.mouse.justPressed)
+        {
+            if (yippee != null) yippee.stop();
+            yippee.play(true); 
+
+            if (pulinhoTween != null) pulinhoTween.cancel();
+
+            char.y = defCharY -150;
+            char.angle = 0;
+            
+            pulinhoTween = FlxTween.tween(char, {y: defCharY, angle: (FlxG.random.bool(50) == true) ? 360 : -360}, 0.8, {ease: FlxEase.quartOut});
+        }
+    }
 }
+
+var pulinhoTween:FlxTween;
+var yippee:FlxSound = FlxG.sound.load(Paths.sound("yippee-tbh-_1_"));
 
 function updateCurChar(int)
 {
@@ -99,6 +118,8 @@ var text:FunkinText;
 var desc:FunkinText;
 var socials:Array<FunkinSprite> = [];
 
+var defCharY = 0;
+
 function createChar(uau)
 {
     var dir = "menus/credits/people/";
@@ -110,6 +131,8 @@ function createChar(uau)
     char.screenCenter();
     char.y -= 45;
     add(char);
+
+    defCharY = char.y;
 
     if (text != null) text.destroy();
 
