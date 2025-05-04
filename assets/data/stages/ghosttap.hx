@@ -2,6 +2,8 @@ var chatHud = new FlxCamera();
 
 function create() 
 {
+    importScript("data/scripts/pixel");
+
     FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
 
 	defaultCamZoom = 0.8;
