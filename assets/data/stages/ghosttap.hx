@@ -1,4 +1,5 @@
 var chatHud = new FlxCamera();
+var colorShader = new CustomShader("adjustColor");
 
 function create() 
 {
@@ -11,6 +12,11 @@ function create()
 
 function postCreate() 
 {
+    colorShader.hue = 17;
+	colorShader.saturation = 10;
+	colorShader.brightness = 100;
+    
+            for (i in playerStrums.members) i.shader = colorShader;
 
     trace(boyfriend.x, boyfriend.y, dad.x, dad.y);
     camGame.alpha = 0;
