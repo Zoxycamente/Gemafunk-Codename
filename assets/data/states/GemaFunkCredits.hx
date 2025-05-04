@@ -1,9 +1,14 @@
 var json;
 var curChar = 0;
 
+var camMouse:FlxCamera = new FlxCamera();
+var mouse:FunkinSprite;
+
 function create()
 {
     json = CoolUtil.parseJson(Paths.json("credits"));
+    FlxG.cameras.add(camMouse, false);
+    camMouse.bgColor = 0x0;
 
     var dir = "menus/credits/";
 
@@ -33,6 +38,17 @@ function create()
         }
     
     add(esc = new FunkinSprite(-30,10, Paths.image(dir + "esc"))).scale.set(0.3, 0.3);
+
+    mouse = new FunkinSprite(0, 0);
+    mouse.frames = Paths.getSparrowAtlas("menus/freeplay/Mouse");
+    mouse.animation.addByPrefix("idle", "Idle");
+    mouse.animation.addByPrefix("click", "Click", 24, false);
+    mouse.playAnim("idle");
+
+    mouse.camera = camMouse;
+
+    mouse.scrollFactor.set();
+    add(mouse);
 }
 
 var gay:Int = false;
@@ -44,6 +60,28 @@ function update()
     
     if (controls.LEFT_P) updateCurChar(-1);
     if (controls.RIGHT_P) updateCurChar(1);
+
+    if (mouse.getAnimName() == "click")
+    {
+        mouse.x = FlxG.mouse.screenX - 10;
+        mouse.y = FlxG.mouse.screenY - 8;
+    }
+    else 
+    {
+        mouse.x = FlxG.mouse.screenX;
+        mouse.y = FlxG.mouse.screenY;
+    }
+    
+    if (FlxG.mouse.justPressed)     mouse.playAnim("click", true);
+
+    for (x in 0...socials.length)
+    {
+        if (socials[x] != null)
+        {
+            if (mouse.x > socials[x].x && mouse.x < socials[x].x + socials[x].width && mouse.y > socials[x].y && mouse.y < socials[x].y + socials[x].height && FlxG.mouse.justPressed)
+                CoolUtil.openURL(json.people[curChar].socials[x].destiny);
+        }
+    }
 }
 
 function updateCurChar(int)
@@ -59,6 +97,7 @@ function updateCurChar(int)
 var char:FunkinSprite;
 var text:FunkinText;
 var desc:FunkinText;
+var socials:Array<FunkinSprite> = [];
 
 function createChar(uau)
 {
@@ -94,4 +133,25 @@ function createChar(uau)
     if (uau == gay) desc.text += " / GAY"; //essencial
     desc.screenCenter();
     desc.y += 250;
+
+    for (i in socials) if (i != null) i.destroy();
+
+    if (json.people[uau].socials != null)
+    {
+        var redes = json.people[uau].socials;
+
+        for (i in 0...redes.length)
+        {
+            var rede = new FunkinSprite(85 * (i + 3), 120, Paths.image("menus/credits/" + redes[i].type));
+            rede.scale.set(0.15, 0.15);
+            rede.updateHitbox();
+            add(rede);
+
+            socials.push(rede);
+        }
+    }
+    else 
+    {
+        trace(json.people[uau].name + " num tem redes sociaisss, que pobre!");
+    }
 }

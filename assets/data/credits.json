@@ -191,7 +191,27 @@
             "name": "Boboa",
             "function": "Programadora",
             "image": "boboa",
-            "scale": 0.8
+            "scale": 0.8,
+
+            "socials": 
+            [
+                {
+                    "type": "youtube",
+                    "destiny": "https://www.youtube.com/@Bobolinhas9"
+                },
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/bobolinhas9"
+                },
+                {
+                    "type": "bluesky",
+                    "destiny": "https://bsky.app/profile/bobolinhasdebahai.bsky.social"
+                },
+                {
+                    "type": "newgrounds",
+                    "destiny": "https://www.newgrounds.com/portal/view/770371"
+                }
+            ]
         },
         {
             "name": "Zoxy",
