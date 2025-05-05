@@ -8,6 +8,7 @@ function create()
 function postCreate() 
 {
     WindowUtils.winTitle = windowName + ' | ' + PlayState.SONG.meta.displayName;
+    gameOverSong = "gameover gemafunk";
 }
 
 function update()

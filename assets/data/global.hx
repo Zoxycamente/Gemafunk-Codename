@@ -7,7 +7,18 @@ import funkin.backend.system.framerate.CodenameBuildField;
 
 public static var windowName:String = 'GemaFunk';
 
+public static var defaultX:Int;
+public static var defaultY:Int;
+
 WindowUtils.winTitle = windowName;
+
+function postGameStart()
+{
+    FlxG.switchState(new TitleState());
+
+    defaultX = window.x;
+    defaultY = window.y;
+}
 
 function postStateSwitch()
 {

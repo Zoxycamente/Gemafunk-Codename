@@ -1,9 +1,11 @@
+import Sys;
+
 var chatHud = new FlxCamera();
 var colorShader = new CustomShader("adjustColor");
 
 function create() 
 {
-    importScript("data/scripts/pixel");
+    importScript("data/scripts/pixel2");
 
     FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
 
@@ -46,7 +48,29 @@ function postCreate()
     imagem.antialiasing = true;
     imagem.scale.set(2, 2);
 
+
+    defDadX = dad.x;
 }
+
+var defDadX = 0;
+
+function onPlayerMiss(e)
+{
+    if (dad.x > defDadX - 150) dad.x -= 10;
+
+    new FlxTimer().start(0.05, () -> {
+        var mult = FlxG.random.int(-5, 5);
+        window.x = defaultX + mult;
+        window.y = defaultY + mult;
+    }, 8);
+
+    new FlxTimer().start(0.05 * 8, () -> {
+        window.x = defaultX;
+        window.x = defaultY;
+    });
+}
+
+var windowPipi:Int = -1;
 
 function beatHit(curBeat) 
 {

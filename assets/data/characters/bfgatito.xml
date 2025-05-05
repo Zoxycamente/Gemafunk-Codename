@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="-130" y="10" camx="100" camy="75" sprite="thousandFloors/bf-rabdit" icon="bf-fudido" color="#f9a875" isPlayer="true" flipX="true">
+<character x="-130" y="10" sprite="thousandFloors/bf-rabdit" flipX="true" camx="100" camy="75" isPlayer="true" icon="bf-fudido" color="#F9A875" gameOverChar="bfgatito">
 	<anim name="idle" anim="Idle" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singUP" anim="Up" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singLEFT" anim="Left" x="0" y="0" fps="12" loop="false"/>
@@ -9,4 +9,6 @@
 	<anim name="singLEFTmiss" anim="LMISS" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singRIGHTmiss" anim="RMISS" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singDOWNmiss" anim="DMISS" x="0" y="0" fps="12" loop="false"/>
+	<anim name="firstDeath" anim="Death0" x="0" y="0" fps="12" loop="false" indices="0..18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18"/>
+	<anim name="deathLoop" anim="DeathLOOP" x="0" y="0" fps="24" loop="false"/>
 </character>

@@ -4,7 +4,7 @@ function create()
     
     for (char in [boyfriend, dad])
     {
-        char.scale.set(0.02325581395, 0.02325581395);
+        char.scale.set(0.02825581395, 0.02825581395);
         char.pixelPerfectPosition = true;
     }
 
@@ -25,26 +25,57 @@ function create()
 
     FlxG.camera.addShader(pixelShader);
     FlxG.camera.addShader(colorShader);
-    camHUD.addShader(colorShader);
+    camHUD.addShader(colorShader2);
 
     pixelShader.pixelSize = 0.001;
 
     //colorShader.hue = 150;
     //colorShader.saturation = -100;
-    colorShader.brightness = 20;
+    //colorShader.brightness = 20;
+
+    importScript("data/scripts/silicatHUD");
+
+}
+
+function onGameOver(e)
+{
+    inGameover = true;
+    camGame.x = 0;
+    camGame.zoom = 0.2;
+}
+
+var inGameover:Bool = false;
+
+function postUpdate()
+{
+    if (!inGameover)
+    {
+        camGame.zoom = 7;
+        camGame.x = 350;
+    }
 }
 
 var colorShader = new CustomShader("adjustColor");
+var colorShader2 = new CustomShader("adjustColor");
 var pixelShader = new CustomShader("pixel");
 
-var hues = [100, 60, 80, -20, -50, 0];
+var hues = [0, -110, 10, 140];
+var saturations = [10, 30, 50, -20];
 var grayscale = false;
+
+var curColor:Int = 0;
 
 function beatHit(b)
 {
     if (b % 24 == 0 && b > 1 && !grayscale)
     {
-        colorShader.hue = hues[FlxG.random.int(0, hues.length-1)];
+        curColor = FlxG.random.int(0, hues.length-1, [curColor]);
+
+
+        colorShader.hue = hues[curColor];
+        colorShader.saturation = saturations[curColor];
+        colorShader2.hue = hues[curColor];
+        colorShader2.saturation = saturations[curColor];
 
         FlxTween.num(100, 0, 1.2, {ease: FlxEase.quintOut}, function(x) colorShader.contrast = x);
     }
@@ -63,10 +94,14 @@ function activeGrayscale()
     grayscale = !grayscale;
 
     if (grayscale)
+    {
         colorShader.saturation = -100;
+        colorShader2.saturation = -100;
+    }
     else
     {
         colorShader.saturation =  0;
+        colorShader2.saturation =  0;
         FlxTween.num(100, 0, 1.2, {ease: FlxEase.quintOut}, function(x) colorShader.contrast = x);
     }
 }

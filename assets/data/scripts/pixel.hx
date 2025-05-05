@@ -101,7 +101,6 @@ function postCreate() {
 	iconP2.antialiasing = false;
 
 	if (enablePixelGameOver) {
-		gameOverSong = "pixel/gameOver";
 		lossSFX = "pixel/gameOverSFX";
 		retrySFX = "pixel/gameOverEnd";
 	}
