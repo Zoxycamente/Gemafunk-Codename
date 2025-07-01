@@ -33,8 +33,6 @@ function create()
     //colorShader.saturation = -100;
     //colorShader.brightness = 20;
 
-    importScript("data/scripts/silicatHUD");
-
 }
 
 function onGameOver(e)

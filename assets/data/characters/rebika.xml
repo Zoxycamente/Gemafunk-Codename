@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
 <character x="-130" y="10" sprite="ebola" camx="-130" icon="gf" color="#A5004D" isGF="true">
-	<anim name="danceLeft" anim="danceLeft" x="0" y="0" fps="24" loop="false" indices="0..15"/>
-	<anim name="danceRight" anim="danceRight" x="0" y="0" fps="24" loop="false"/>
+	<anim name="danceLeft" anim="danceLeft" x="0" y="0" fps="24" loop="false" indices="0,2..17"/>
+	<anim name="danceRight" anim="danceRight" x="0" y="0" fps="24" loop="false" indices="0,2..15"/>
 </character>

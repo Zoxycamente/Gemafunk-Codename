@@ -1,16 +1,21 @@
 import flixel.util.FlxAxes;
 
+var catHUD:FlxCamera = new FlxCamera();
 var base, bb, key, mic, heart, note:FunkinSprite;
 var missTxt, scoreText, ratingText, comboTxt:FlxText;
 
 function create()
 {
+    FlxG.cameras.add(catHUD, false);
+    catHUD.bgColor = FlxColor.TRANSPARENT;
+
     var dir = "game/silicat/";
 
     var blackBox = new FlxSprite().makeGraphic(300, 720, 0xFF000000);
     add(blackBox);
-
-    blackBox.camera = camHUD;
+    
+    
+    blackBox.camera = catHUD;
 
     base = new FunkinSprite(15, -20, Paths.image(dir + "base"));
     bb = new FunkinSprite(35, 580, Paths.image(dir + "caixadesom"));
@@ -21,7 +26,7 @@ function create()
     scoreText = new FlxText(0, 135, 0, "0", 30);
     scoreText.setFormat(Paths.font("yoster.ttf"), 50, 0xFF000000);
     scoreText.antialiasing = false;
-    scoreText.camera = camHUD;
+    scoreText.camera = catHUD;
 
     missTxt = new FlxText(0, 650, 0, "0");
     ratingText = new FlxText(0, 650, 0, "0");
@@ -37,7 +42,7 @@ function create()
     {
         items.antialiasing = false;
         items.pixelPerfectPosition = true;
-        items.camera = camHUD;
+        items.camera = catHUD;
 
         items.scale.set(1.63, 1.63);
         items.updateHitbox();
@@ -49,14 +54,14 @@ function create()
 
     var rap = new FlxText(130, 30, 0, "RAP", 30);
     rap.setFormat(Paths.font("yoster.ttf"), 40, 0xFF000000);
-    rap.camera = camHUD;
+    rap.camera = catHUD;
     add(rap);
 
     for (text in [missTxt, ratingText, comboTxt])
     {
         text.setFormat(Paths.font("yoster.ttf"), 30, 0xFF000000);
         text.antialiasing = false;
-        text.camera = camHUD;
+        text.camera = catHUD;
 
         add(text);
     }
@@ -67,7 +72,7 @@ function create()
     {
         heart.antialiasing = false;
         heart.pixelPerfectPosition = true;
-        heart.camera = camHUD;
+        heart.camera = catHUD;
 
         heart.scale.set(1.65, 1.65);
         heart.updateHitbox();
@@ -93,25 +98,25 @@ function update(e)
 
     for (i in 0...helt)
     {
-        heartGrp[i].visible = true;
+        heartGrp[i]?.visible = true;
     }
 
-    scoreText.text = PlayState.instance.songScore;
-    scoreText.screenCenter(FlxAxes.X);
-    scoreText.x -= 470;
+    scoreText?.text = PlayState.instance.songScore;
+    scoreText?.screenCenter(FlxAxes.X);
+    scoreText?.x -= 470;
 
-    missTxt.text = PlayState.instance.misses;
-    missTxt.screenCenter(FlxAxes.X);
-    missTxt.x -= 370;
+    missTxt?.text = PlayState.instance.misses;
+    missTxt?.screenCenter(FlxAxes.X);
+    missTxt?.x -= 370;
 
-    comboTxt.text = PlayState.instance.combo;
-    comboTxt.screenCenter(FlxAxes.X);
-    comboTxt.x -= 470;
+    comboTxt?.text = PlayState.instance.combo;
+    comboTxt?.screenCenter(FlxAxes.X);
+    comboTxt?.x -= 470;
 
     var acc = Std.int(CoolUtil.quantize(PlayState.instance.accuracy * 100, 100));
     if (acc < 0) acc *= -1;
 
-    ratingText.text = acc;
-    ratingText.screenCenter(FlxAxes.X);
-    ratingText.x -= 570;
+    ratingText?.text = acc;
+    ratingText?.screenCenter(FlxAxes.X);
+    ratingText?.x -= 570;
 }

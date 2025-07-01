@@ -6,19 +6,13 @@ var colorShader = new CustomShader("adjustColor");
 function create() 
 {
     importScript("data/scripts/pixel2");
-
-    FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
+    //FlxG.cameras.add(chatHud, false).bgColor = FlxColor.TRANSPARENT;
 
 	defaultCamZoom = 0.8;
 }
 
 function postCreate() 
 {
-    colorShader.hue = 17;
-	colorShader.saturation = 10;
-	colorShader.brightness = 100;
-    
-            for (i in playerStrums.members) i.shader = colorShader;
 
     trace(boyfriend.x, boyfriend.y, dad.x, dad.y);
     camGame.alpha = 0;
@@ -48,6 +42,8 @@ function postCreate()
     imagem.antialiasing = true;
     imagem.scale.set(2, 2);
 
+    window.x = defaultX;
+    window.y = defaultY;
 
     defDadX = dad.x;
 }

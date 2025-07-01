@@ -81,20 +81,6 @@
             ]
         },
         {
-            "name": "Torresmo",
-            "function": "Artista / Gostosa",
-            "image": "torrgostosa",
-            "scale": 1.1,
-
-            "socials": 
-            [
-                {
-                    "type": "twitter",
-                    "destiny": "https://x.com/Torrmate?t=IsTLLWCtmOHwQovDfWxUOA&s=09"
-                }
-            ]
-        },
-        {
             "name": "Offe",
             "function": "Artista / Animador / Maior sigma do mod",
             "image": "offe",
@@ -156,7 +142,7 @@
         },
         {
             "name": "Filipe404",
-            "function": "Artista / cherry lover",
+            "function": "Artista",
             "image": "fip",
             "scale": 0.7,
 
@@ -580,6 +566,20 @@
                 {
                     "type": "newgrounds",
                     "destiny": "https://ploxy12345678910.newgrounds.com/"
+                }
+            ]
+        },
+        {
+            "name": "Torresmo",
+            "function": "Suporte",
+            "image": "torrgostosa",
+            "scale": 1.1,
+
+            "socials": 
+            [
+                {
+                    "type": "twitter",
+                    "destiny": "https://x.com/Torrmate?t=IsTLLWCtmOHwQovDfWxUOA&s=09"
                 }
             ]
         }

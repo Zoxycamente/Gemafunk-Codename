@@ -12,8 +12,11 @@ public static var defaultY:Int;
 
 WindowUtils.winTitle = windowName;
 
+public static var experimentalBuild:Bool;
+
 function postGameStart()
 {
+    experimentalBuild = false;
     FlxG.switchState(new TitleState());
 
     defaultX = window.x;

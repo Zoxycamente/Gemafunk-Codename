@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="-40" x="-100" camy="200" camx="980" sprite="Gwerbyzugbb" scale="0.57" flipX="true" icon="fimosegames" color="#563968" holdTime="6.1">
+<character y="-40" x="-100" camy="200" camx="980" sprite="Gwerbyzugbb" scale="0.57" flipX="true" icon="fimosegamesNew" color="#563968" holdTime="6.1">
 	<anim name="idle" anim="eldI" x="0" y="0" fps="12" loop="false" indices="2..4,2..0"/>
 	<anim name="singUP" anim="pU" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singRIGHT" anim="tfeL" x="0" y="0" fps="12" loop="false"/>

@@ -52,7 +52,7 @@ function onStrumCreation(event) {
 	strum.loadGraphic(Paths.image('game/notes/arrows-pixels'), true, 17, 17);
 	strum.animation.add("static", [event.strumID]);
 	strum.animation.add("pressed", [4 + event.strumID, 8 + event.strumID], 12, false);
-	strum.animation.add("confirm", [12 + event.strumID, 16 + event.strumID], 24, false);
+	strum.animation.add("confirm", [12 + event.strumID, 16 + event.strumID], 12, false);
 
 	strum.scale.set(daPixelZoom, daPixelZoom);
 	strum.updateHitbox();
