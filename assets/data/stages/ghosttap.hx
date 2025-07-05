@@ -1,6 +1,5 @@
 import Sys;
 
-var chatHud = new FlxCamera();
 var colorShader = new CustomShader("adjustColor");
 
 function create() 
@@ -28,15 +27,6 @@ function postCreate()
     insert(0, bg);
 
     us = new FlxSprite(boyfriend.x+100, boyfriend.y+600).loadGraphic(Paths.image("stages/1025_Sem_Titulo_20241217133850"));
-    
-    
-    chat = new FunkinSprite(400, 320, Paths.image("stages/chat"));
-    chat.addAnim("chat", "chat", 24, true);
-    chat.playAnim("chat");
-    chat.cameras = [chatHud];
-    chat.antialiasing = true;
-    chat.scale.set(0.3, 0.3);
-    add(chat);
 
     imagem = new FunkinSprite(0,200, Paths.image("stages/feiodocaralho"));
     imagem.antialiasing = true;
@@ -112,9 +102,4 @@ function beatHit(curBeat)
             camGame.flash(FlxColor.BLACK, 50);
             remove(imagem);
     }
-}
-
-function update()
-{
-    chatHud.alpha = camGame.alpha;
 }

@@ -22,7 +22,6 @@ function postCreate()
     camChat.x = 890;
 
     healthBar.flipX = true;
-    playerStrums.cpu = true;
 }
 
 var sprite;
@@ -83,6 +82,13 @@ function beatHit(b)
         coolMessage = message;
 
         isFirstChat = false;
+
+        if (coolMessage.overlaps(sprite))
+            desiredScroll += mes.sentBy == "Willzinhuu " ? 100 : 50;
+        else
+            desiredScroll += 0;
+    
+        camChat.scroll.y = lerp(camChat.scroll.y, desiredScroll, 1);
     }
 }
 
@@ -98,21 +104,9 @@ var lastCurMs:Int = 0;
 
 var desiredScroll = 0;
 
-function update(e)
-{
-    if (coolMessage.overlaps(sprite))
-        desiredScroll += 5;
-    else
-        desiredScroll += 0;
-
-    camChat.scroll.y = lerp(camChat.scroll.y, desiredScroll, 0.3);
-    //FlxG.camera.scroll.x = camFollow.x + 200;
-}
-
 function postUpdate(e)
 {
-    iconP2.visible = false;
-    iconP1.flipX = true;
+    iconP1.flipX = iconP2.flipX =true;
 
     for (i in [scoreTxt, accuracyTxt, missesTxt])
         i.visible = false;
@@ -127,5 +121,6 @@ function postUpdate(e)
     healthBarBG.x = healthBar.x - 2;
 
     iconP1.x = 50;
-    iconP1.y = downscroll ? 100 : 570;
+    iconP2.x = 680;
+
 }

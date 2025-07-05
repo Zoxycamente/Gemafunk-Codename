@@ -60,8 +60,10 @@ function update()
     if (controls.BACK)
         FlxG.switchState(new MainMenuState());
     
-    if (controls.LEFT_P) updateCurChar(-1);
-    if (controls.RIGHT_P) updateCurChar(1);
+    if (controls.LEFT_P || mouse.x > setaoutrolado.x && mouse.x < setaoutrolado.x + setaoutrolado.width && mouse.y > setaoutrolado.y && mouse.y < setaoutrolado.y + setaoutrolado.height && FlxG.mouse.justPressed) 
+        updateCurChar(-1);
+    if (controls.RIGHT_P || mouse.x > setalado.x && mouse.x < setalado.x + setalado.width && mouse.y > setalado.y && mouse.y < setalado.y + setalado.height && FlxG.mouse.justPressed) 
+        updateCurChar(1);
 
     if (mouse.getAnimName() == "click")
     {

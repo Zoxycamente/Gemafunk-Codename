@@ -119,7 +119,7 @@ function generateSongs()
         title.font = Paths.font("arial.ttf");
         add(title);
 
-        var icone = new FunkinSprite(thumb.x + 60, thumb.y + 250, Paths.image("menus/freeplay/Canal"));
+        var icone = new FunkinSprite(thumb.x + 60, thumb.y + 250, Paths.image("menus/freeplay/" + songs[i].canalIcone));
         icone.scale.set(0.5, 0.5);
         add(icone);
 

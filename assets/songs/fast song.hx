@@ -1,15 +1,11 @@
 function update() {
     if (startingSong || !canPause || paused || health <= 0) return;
-    /**
-
-    if (experimentalBuild)
-    {
-        if (FlxG.keys.pressed.TWO) updateSpeed(true);
+   
+    if (FlxG.keys.pressed.TWO) updateSpeed(true);
         if (FlxG.keys.justReleased.TWO) {
             updateSpeed(false);
             player.cpu = false;
         }
-    }     */
 }
 
 function updateSpeed(fast:Bool) {
