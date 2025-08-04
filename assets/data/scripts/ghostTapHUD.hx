@@ -1,7 +1,9 @@
 var data = CoolUtil.parseJson(Paths.json("twitchChat"));
+static var desativaessaporra:Bool = false;
 
 function postCreate()
 {
+    if (desativaessaporra) disableScript();
     FlxG.camera.x -= 400;
     trace(FlxG.camera.x);
 

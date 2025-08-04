@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="aviso.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="aviso0000" x="0" y="0" width="37" height="77" frameX="-66" frameY="-1" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0001" x="37" y="0" width="63" height="63" frameX="-48" frameY="-9" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0002" x="37" y="0" width="63" height="63" frameX="-48" frameY="-9" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0003" x="100" y="0" width="102" height="70" frameX="-7" frameY="-6" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0004" x="0" y="77" width="102" height="77" frameX="0" frameY="0" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0005" x="0" y="77" width="102" height="77" frameX="0" frameY="0" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0006" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0007" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0008" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0009" x="0" y="154" width="105" height="76" frameX="-1" frameY="-2" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0010" x="0" y="154" width="105" height="76" frameX="-1" frameY="-2" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0011" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0012" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0013" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0014" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0015" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0016" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0017" x="0" y="154" width="105" height="76" frameX="-1" frameY="-2" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0018" x="0" y="154" width="105" height="76" frameX="-1" frameY="-2" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0019" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0020" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0021" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0022" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0023" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0024" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0025" x="0" y="154" width="105" height="76" frameX="-1" frameY="-2" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0026" x="0" y="154" width="105" height="76" frameX="-1" frameY="-2" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0027" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0028" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0029" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0030" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0031" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0032" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0033" x="0" y="154" width="105" height="76" frameX="-1" frameY="-2" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0034" x="0" y="154" width="105" height="76" frameX="-1" frameY="-2" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0035" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0036" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0037" x="105" y="154" width="105" height="72" frameX="-2" frameY="-4" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0038" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0039" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+	<SubTexture name="aviso0040" x="102" y="77" width="107" height="74" frameX="0" frameY="-3" frameWidth="111" frameHeight="78"/>
+</TextureAtlas>

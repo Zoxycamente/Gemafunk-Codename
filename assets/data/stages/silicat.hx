@@ -1,6 +1,8 @@
 function create() 
 {
     importScript("data/scripts/pixel");
+    importScript("data/scripts/silicatHUD");
+
     
     for (char in [boyfriend, dad])
     {
@@ -25,7 +27,8 @@ function create()
 
     FlxG.camera.addShader(pixelShader);
     FlxG.camera.addShader(colorShader);
-    camHUD.addShader(colorShader2);
+    camHUD.addShader(colorShader);
+    catHUD.addShader(colorShader);
 
     pixelShader.pixelSize = 0.001;
 
@@ -49,12 +52,11 @@ function postUpdate()
     if (!inGameover)
     {
         camGame.zoom = 7;
-        camGame.x = 350;
+        camGame.x = 330;
     }
 }
 
 var colorShader = new CustomShader("adjustColor");
-var colorShader2 = new CustomShader("adjustColor");
 var pixelShader = new CustomShader("pixel");
 
 var hues = [0, -110, 10, 140];
@@ -72,8 +74,6 @@ function beatHit(b)
 
         colorShader.hue = hues[curColor];
         colorShader.saturation = saturations[curColor];
-        colorShader2.hue = hues[curColor];
-        colorShader2.saturation = saturations[curColor];
 
         FlxTween.num(100, 0, 1.2, {ease: FlxEase.quintOut}, function(x) colorShader.contrast = x);
     }
@@ -94,12 +94,10 @@ function activeGrayscale()
     if (grayscale)
     {
         colorShader.saturation = -100;
-        colorShader2.saturation = -100;
     }
     else
     {
         colorShader.saturation =  0;
-        colorShader2.saturation =  0;
         FlxTween.num(100, 0, 1.2, {ease: FlxEase.quintOut}, function(x) colorShader.contrast = x);
     }
 }

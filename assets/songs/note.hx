@@ -5,3 +5,12 @@ function onNoteCreation(event) {
 function onStrumCreation(event) {
     //event.sprite = 'game/notes/notes';
 }
+
+function postCreate() {
+    for (i in 0...4) {
+        playerStrums.members[i].x += 40 + (i*5);
+        cpuStrums.members[i].x += -40 + (i*5);
+    }
+}
+
+if (curSong == "ghosttap") disableScript();

@@ -30,11 +30,22 @@ function postCreate() {
     black2 = new FlxSprite(-110,600).makeSolid(1500, 150, FlxColor.BLACK);
     black2.cameras = [camHUD];
     trace(dad.x); //-500 aparentemente
+
+    aviso = new FunkinSprite(550,610, Paths.image("aviso"));
+    aviso.addAnim("idle", "aviso0014", 24, true);
+    aviso.antialiasing = true;
+    aviso.scale.set(2,2);
+    aviso.alpha = 0;
+    add(aviso);
 }
 
 function beatHit(curBeat) {
+    iconP2.scale.set(1,1); //gemabot amaldiçoado
     switch(curBeat) {
         case 100:
+            FlxTween.tween(aviso, {alpha: 1}, 0.5, {ease: FlxEase.cubeInOut});
+
+            aviso.playAnim("idle");
             strumLines.members[0].cpu = canDie = false;
             strumLines.members[1].cpu = true;
             remove(bgnormal);
@@ -48,10 +59,11 @@ function beatHit(curBeat) {
         case 390, 420:
             defaultCamZoom = 0.6;
         case 424:
-            FlxTween.tween(dad, {alpha: 0}, 30, {ease: FlxEase.cubeInOut});
+            add(bgnormal);
+            remove(bg);
+            for (porrinhas in [dad, bgnormal]) FlxTween.tween(porrinhas, {alpha: 0}, 30, {ease: FlxEase.cubeInOut});
 
             defaultCamZoom = 0.7;
-            FlxTween.tween(bg, {alpha: 0.5}, 1, {ease: FlxEase.cubeInOut});
             for (elements in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, missesTxt, accuracyTxt]) FlxTween.tween(elements, {alpha:0}, 1, {ease: FlxEase.cubeInOut});
             for(i in 0...4) 
                 {
@@ -82,6 +94,7 @@ function stepHit(curStep)
             accuracyTxt.alpha = 0;
         case 502:
             bg.alpha = 0.5;
+            FlxTween.tween(aviso, {alpha: 0}, 1, {ease: FlxEase.cubeInOut});
             FlxTween.tween(boyfriend, {alpha: 0}, 1, {ease: FlxEase.cubeInOut});
             FlxTween.tween(dad, {x: 40}, 1, {ease: FlxEase.cubeInOut});
             insert(0, black);
@@ -103,13 +116,16 @@ function stepHit(curStep)
             FlxTween.tween(boyfriend, {alpha: 1}, 1, {ease: FlxEase.cubeInOut});
             for(i in 0...4) 
                 {
-                    FlxTween.tween(strumLines.members[0].members[i], {x: strumLines.members[1].members[i].x - 660}, 1, {ease: FlxEase.cubeInOut});
+                    FlxTween.tween(strumLines.members[0].members[i], {x: strumLines.members[1].members[i].x - 720}, 1, {ease: FlxEase.cubeInOut});
                 }
         case 1152:
             for (elements in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, missesTxt, accuracyTxt]) elements.alpha = 0;
+            aviso.alpha = 1;
             strumLines.members[0].cpu = canDie = false;
             strumLines.members[1].cpu = true;
             strumLines.members[1].visible = false;
+        case 1163:
+            aviso.alpha = 0;
         case 1168:
             for(i in 0...4) 
                 {
