@@ -1,9 +1,7 @@
 var data = CoolUtil.parseJson(Paths.json("twitchChat"));
-static var desativaessaporra:Bool = false;
 
 function postCreate()
 {
-    if (desativaessaporra) disableScript();
     FlxG.camera.x -= 400;
     trace(FlxG.camera.x);
 
@@ -86,7 +84,7 @@ function beatHit(b)
         isFirstChat = false;
 
         if (coolMessage.overlaps(sprite))
-            desiredScroll += mes.sentBy == "Willzinhuu " ? 100 : 50;
+            desiredScroll += mes.sentBy == "Willzinhuu " ? 130 : 70;
         else
             desiredScroll += 0;
     
@@ -97,7 +95,6 @@ function beatHit(b)
 var coolMessage;
 
 var isFirstChat:Bool = true;
-
 var camChat = new FlxCamera();
 var messagesGroup:Array<FunkinText> = [];
 

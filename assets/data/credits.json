@@ -11,7 +11,7 @@
             [
                 {
                     "type": "youtube",
-                    "destiny": "https://youtube.com/@fita6999?si=nf8NIpahe0Uvynax"
+                    "destiny": "https://youtube.com/@fita6999"
                 },
                 {
                     "type": "twitter",
@@ -103,7 +103,7 @@
             "socials": 
             [
                 {
-                    "type": "twitter",
+                    "type": "youtube",
                     "destiny": "https://www.youtube.com/@MikeAnim"
                 }
             ]

@@ -41,8 +41,8 @@
 	<SubTexture name="purple hold piece0000" x="1693" y="256" width="29" height="44"/>
 	
 	<SubTexture name="red0000" x="1722" y="256" width="179" height="156"/>
-	<SubTexture name="red hold piece0000" x="1901" y="256" width="29" height="66"/>
-	<SubTexture name="red hold end0000" x="1930" y="256" width="29" height="44"/>
+	<SubTexture name="red hold piece0000" x="1930" y="256" width="29" height="44"/>
+	<SubTexture name="red hold end0000" x="1901" y="256" width="29" height="66"/>
 	<SubTexture name="right confirm0000" x="0" y="487" width="252" height="226" frameX="0" frameY="-3" frameWidth="253" frameHeight="231"/>
 	<SubTexture name="right confirm0001" x="252" y="487" width="252" height="226" frameX="0" frameY="-3" frameWidth="253" frameHeight="231"/>
 	<SubTexture name="right confirm0002" x="504" y="487" width="253" height="231"/>

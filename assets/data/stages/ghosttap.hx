@@ -30,7 +30,8 @@ function postCreate()
 
     imagem = new FunkinSprite(0,200, Paths.image("stages/feiodocaralho"));
     imagem.antialiasing = true;
-    imagem.scale.set(1.6, 1.6);
+    imagem.scale.set(2, 2);
+    imagem.cameras = catHUD;
 
     window.x = defaultX;
     window.y = defaultY;
